@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="70" viewBox="0 0 800 70">
+    <defs>
+        <linearGradient id="prefix__a" x1="4.607%" x2="71.824%" y1="49.343%" y2="50.187%">
+            <stop offset="0%" stop-color="#30BBFF"/>
+            <stop offset="100%" stop-color="#7F61FD"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <text font-family="GmarketSansBold, Gmarket Sans" font-size="70" font-weight="bold">
+            <tspan x=".23" y="56" fill="#343C55">로보 자산관리 앱 </tspan> <tspan x="530.41" y="56" fill="#FFF">머니포트</tspan>
+        </text>
+        <path fill="url(#prefix__a)" d="M1.431 -8H799.431V70H1.431z"/>
+    </g>
+</svg>

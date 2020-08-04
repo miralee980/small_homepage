@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+    <defs>
+        <linearGradient id="prefix__c" x1="43.956%" x2="46.322%" y1="25.982%" y2="87.308%">
+            <stop offset="0%" stop-color="#00BDFF"/>
+            <stop offset="100%" stop-color="#855CFF"/>
+        </linearGradient>
+        <linearGradient id="prefix__f" x1="43.956%" x2="54.142%" y1="25.982%" y2="59.603%">
+            <stop offset="0%" stop-color="#00BDFF"/>
+            <stop offset="100%" stop-color="#855CFF"/>
+        </linearGradient>
+        <path id="prefix__a" d="M0 0H1920V1080H0z"/>
+        <path id="prefix__e" d="M640.592 69.092H1775.592V2351.092H640.592z"/>
+        <filter id="prefix__d" width="101.5%" height="100.7%" x="-.7%" y="-.3%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0.135192703 0 0 0 0 0.271710824 0 0 0 0.3 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="prefix__b" fill="#fff">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <use fill="#282C39" xlink:href="#prefix__a"/>
+        <g mask="url(#prefix__b)" opacity=".497">
+            <g>
+                <path fill="url(#prefix__c)" d="M641 68H1776V2350H641z" transform="translate(358 -339) rotate(45 1208.5 1209)"/>
+                <g transform="translate(358 -339) rotate(45 1208.092 1210.092)">
+                    <use fill="#000" filter="url(#prefix__d)" xlink:href="#prefix__e"/>
+                    <use fill="url(#prefix__f)" xlink:href="#prefix__e"/>
+                </g>
+                <path fill="#313543" d="M758.408 -107H775.408V1865H758.408z" transform="translate(358 -339) rotate(45 766.908 879)"/>
+            </g>
+        </g>
+    </g>
+</svg>

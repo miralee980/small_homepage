@@ -1,0 +1,815 @@
+@charset "UTF-8";
+
+/* Gmarket Sans Font */
+@font-face {
+	font-family: "GmarketSansLight";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "GmarketSansBold";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Noto Sans KR Font */
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+/* Roboto Condensed */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* All Device 
+모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨. 
+1920~ 1199px
+*/
+
+body {
+	width: 100%;
+}
+
+.textEdit {
+	width: 100%;
+	height: 100%;
+	background: #f3f1f2;
+	font-family: sans-serif;
+}
+
+.app {
+	margin: 1rem 4rem;
+	display: block;
+	position: relative;
+	top: 60px;
+}
+
+.app .ql-container {
+	border-bottom-left-radius: 0.5em;
+}
+
+.app .ql-container {
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+	background: #fefcfc;
+}
+
+/* Snow Theme */
+.app .ql-snow.ql-toolbar {
+	display: block;
+	background: #eaecec;
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+}
+
+/* Bubble Theme */
+.app .ql-bubble .ql-editor {
+	border: 1px solid #ccc;
+	border-radius: 0.5em;
+}
+
+.app .ql-editor {
+	min-height: 18em;
+}
+
+.themeSwitcher {
+	margin-top: 0.5em;
+	font-size: small;
+}
+
+.wrapper {
+	width: 100%;
+	font-family: "Noto Sans KR", sans-serif;
+	position: relative;
+}
+
+/* Header */
+.header {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px 0 60px;
+	position: fixed;
+	z-index: 999;
+}
+
+.header_scroll {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px 0 60px;
+	position: fixed;
+	z-index: 999;
+	background-color: #282c39;
+}
+
+.header_logo {
+	padding: 12px 0;
+}
+
+.logo_lg {
+	width: auto;
+	height: 28px;
+}
+
+.logo_sm {
+	width: 36px;
+	height: 36px;
+	display: none;
+}
+
+.header_nav {
+}
+
+.header_nav_list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.nav_item {
+}
+
+.nav_txt {
+	font-family: "Noto Sans KR", sans-serif;
+	padding: 20px 24px;
+	font-size: 14px;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: rgba(229, 229, 229, 0.75);
+}
+
+.nav_txt.active {
+	color: #fff;
+	font-weight: bold;
+}
+
+/* Content */
+.content {
+	width: 100%;
+	position: relative;
+}
+
+.title_wrap {
+	width: 100%;
+	background-image: url("../assets/images/img-bg-faq@3x.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 2.51%;
+}
+
+.title_faq {
+	font-size: 36px;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.54px;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 8.35%;
+}
+
+.search_wrap {
+	width: 80.7%;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	border-radius: 27px;
+	border: 1px solid #eaeaea;
+	margin-top: 3.34%;
+	position: relative;
+	padding: 14px 0;
+}
+
+.ic_search {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 20px;
+	top: 14px;
+}
+
+.search_input {
+	display: block;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.27px;
+	color: #343c55;
+	margin-left: 52px;
+	border: none;
+	width: 90%;
+	box-sizing: border-box;
+	background-color: transparent;
+}
+
+.search_input::placeholder {
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.27px;
+	color: #cccccc;
+}
+
+input[type="text"] {
+	padding: 0;
+	height: inherit;
+}
+
+.faq_cont {
+	width: 90.9%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.stocks,
+.advisory {
+	font-size: 30px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #d6d6d6;
+}
+
+.stocks.active,
+.advisory.active {
+	color: #343c55;
+	padding-bottom: 0.56%;
+	border-bottom: 3px solid #4e7cff;
+}
+
+.faq_list {
+	margin-top: 12.25%;
+}
+
+.faq_select {
+	display: none;
+}
+
+.faq_box {
+	width: 100%;
+	margin-top: 4.01%;
+	margin-bottom: 4.46%;
+	border-bottom: 1px solid #ececec;
+	position: relative;
+}
+
+.qlist {
+	width: 100%;
+	position: relative;
+}
+
+.faq_wrap {
+	width: 100%;
+	position: relative;
+}
+
+.question {
+	padding: 3.58% 2.24% 3.58% 2.24%;
+	border-top: 1px solid #ececec;
+}
+
+.question_tit {
+	padding-left: 34px;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #343c55;
+	margin-top: 5px;
+}
+
+.question_tit.active {
+	position: relative;
+	font-weight: bold;
+}
+
+.ic_arrow_down {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 2.4%;
+	top: 33%;
+}
+
+.ic_arrow_up {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 2.4%;
+	top: 10%;
+}
+
+.question::before {
+	content: "Q";
+	display: inline-block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	padding-top: 4px;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	background-image: url("../assets/images/img-blue-circle.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.answer {
+	padding: 2.91% 6% 3.13% 6%;
+	background-color: #f9fafb;
+	border-top: 1px solid #eaeaea;
+}
+
+.answer_txt {
+	font-size: 14px;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.63;
+	letter-spacing: -0.3px;
+	color: #343c55;
+	margin-bottom: 1.83%;
+}
+
+.txt_md {
+	font-weight: 700;
+}
+
+.txt_blue {
+	color: #4e7cff;
+}
+
+.answer_txt:last-child {
+	margin-bottom: 0;
+}
+
+/* Footer */
+.footer_wrap {
+	width: 100%;
+	background-color: #171920;
+	padding: 2.98% 0 3.76% 0;
+}
+
+.footer_inner {
+	width: 90.9%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.footer_name {
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.5px;
+	color: #bbbbbb;
+}
+
+.footer_detail {
+	margin-top: 1.45%;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #808080;
+}
+
+.footer_detail_txt {
+	margin-bottom: 0.5%;
+}
+
+.footer_detail_txt:first-child::after {
+	content: "";
+	display: inline-block;
+	background: url("../assets/images/line-footer-666.svg");
+	width: 1px;
+	height: 10px;
+	margin: 0 6px;
+	margin-top: 5px;
+}
+
+.footer_tab {
+	margin-top: 2.57%;
+}
+
+.footer_tab_item {
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+
+.footer_tab_item::after {
+	content: "";
+	display: inline-block;
+	background: url("../assets/images/line-footer-979797.svg");
+	width: 1px;
+	height: 10px;
+	margin: 0 6px;
+	margin-top: 5px;
+}
+
+.footer_tab_item:last-child::after {
+	display: none;
+}
+
+/* Tablet Device 대응
+사용자 해상도가 991px 이하일 때 이 코드가 실행됨. 미디어쿼리를 지원 
+*/
+
+@media screen and (max-width: 991px) {
+	/* Header */
+
+	.logo_lg {
+		display: none;
+	}
+
+	.logo_sm {
+		display: inline-block;
+	}
+
+	/* Contents */
+
+	.title_wrap {
+		padding-bottom: 7.29%;
+	}
+
+	.title_faq {
+		font-size: 28px;
+		font-weight: 900;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.42px;
+		text-align: center;
+		color: #ffffff;
+		padding-top: 18.21%;
+	}
+
+	.search_wrap {
+		max-width: none;
+		margin-top: 4.86%;
+	}
+
+	.faq_cont {
+		max-width: none;
+	}
+
+	.stocks.active {
+		padding-bottom: 3.22%;
+	}
+
+	.faq_list {
+		margin-top: 10.25%;
+	}
+
+	.question {
+		padding: 3.47% 2.24% 3.47% 2.24%;
+	}
+
+	/* Footer */
+	.footer_wrap {
+		padding: 6.57% 0;
+	}
+
+	.footer_inner {
+		max-width: none;
+	}
+}
+
+/* Lagre Device 대응
+사용자 해상도가 768px 이하일 때 이 코드가 실행됨. 미디어쿼리를 지원 
+*/
+
+@media screen and (max-width: 768px) {
+	/* Header */
+	.header {
+		padding: 0 15px 0 30px;
+	}
+
+	.nav_txt {
+		padding: 20px 15px;
+	}
+
+	/* Content */
+
+	.title_wrap {
+		padding-bottom: 6.27%;
+	}
+
+	.title_faq {
+		font-size: 24px;
+		font-weight: 900;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.42px;
+		text-align: center;
+		color: #ffffff;
+		padding-top: 18.28%;
+	}
+
+	.search_wrap {
+		margin-top: 6.27%;
+		width: 79.1%;
+	}
+
+	.ic_search {
+		width: 18px;
+		height: 18px;
+		top: 15px;
+	}
+
+	.search_input {
+		font-size: 16px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.13;
+		letter-spacing: -0.24px;
+		margin-left: 48px;
+		margin-top: 0.3%;
+	}
+
+	.search_input::placeholder {
+		font-size: 16px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.13;
+		letter-spacing: -0.24px;
+	}
+
+	.faq_cont {
+		width: 79.1%;
+	}
+
+	.stocks.active,
+	.advisory.active {
+		padding-bottom: 3.22%;
+	}
+
+	.faq_list {
+		margin-top: 9.91%;
+	}
+
+	.faq_select {
+		display: inline-block;
+		width: 100%;
+		border: 1px solid #eaeaea;
+		border-radius: 4px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		font-size: 14px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #343c55;
+		padding: 16px 20px;
+		background-image: url("../assets/images/ic-arrow-down.svg");
+		background-repeat: no-repeat;
+		background-size: 30px 30px;
+		background-position: 96.5%;
+	}
+
+	.select::-ms-expand {
+		display: none;
+	}
+
+	.faq_box {
+		margin-top: 4.96%;
+		margin-bottom: 6.61%;
+	}
+
+	.question {
+		padding: 5.14% 3.32% 5.14% 3.32%;
+	}
+
+	.question_tit {
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #343c55;
+		padding-left: 27px;
+		margin-top: 4px;
+	}
+
+	.ic_arrow_down,
+	.ic_arrow_up {
+		display: none;
+	}
+
+	.question::before {
+		width: 20px;
+		height: 20px;
+		font-size: 13px;
+		text-align: center;
+		padding-top: 4px;
+	}
+
+	.answer {
+		padding: 4.15% 7.74%;
+	}
+
+	.answer_txt {
+		font-size: 13px;
+		font-weight: 400;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.63;
+		letter-spacing: -0.28px;
+		color: #343c55;
+		margin-bottom: 3.18%;
+	}
+
+	.footer_wrap {
+		padding: 9.9% 0;
+	}
+
+	.footer_inner {
+		width: 79.1%;
+	}
+}
+
+/* Medium Device 대응
+사용자 해상도가 576px 이하일 때 이 코드가 실행됨. 미디어쿼리를 지원 
+*/
+
+@media screen and (max-width: 576px) {
+	.title_wrap {
+		padding-bottom: 9.06%;
+	}
+
+	.title_faq {
+		font-size: 18px;
+		padding-top: 26.14%;
+	}
+
+	.search_wrap {
+		width: 83.3%;
+		margin-top: 6.97%;
+		padding: 12px 0;
+	}
+
+	.ic_search {
+		width: 16px;
+		height: 16px;
+		left: 18px;
+		top: 14px;
+	}
+
+	.search_input {
+		font-size: 14px;
+		line-height: 1.29;
+		letter-spacing: -0.29;
+		margin-left: 46px;
+	}
+
+	.search_input::placeholder {
+		font-size: 14px;
+		line-height: 1.29;
+		letter-spacing: -0.29;
+	}
+
+	.faq_cont {
+		width: 83.3%;
+	}
+
+	.stocks,
+	.advisory {
+		font-size: 20px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+	}
+
+	.stocks.active,
+	.advisory.active {
+		font-size: 20px;
+	}
+
+	.faq_list {
+		margin-top: 16.75%;
+	}
+
+	.faq_box {
+		margin-top: 6.28%;
+		margin-bottom: 8.38%;
+	}
+
+	.question {
+		padding: 5.05% 2.53% 5.05% 2.53%;
+	}
+
+	.question_tit {
+		font-size: 13px;
+	}
+
+	.question::before {
+		width: 20px;
+		height: 20px;
+		margin-right: 8px;
+	}
+
+	.answer {
+		padding: 5.68% 8.2%;
+	}
+
+	.answer_txt {
+		font-size: 12px;
+		font-weight: 400;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.63;
+		letter-spacing: -0.26px;
+	}
+
+	.footer_wrap {
+		padding: 9.73% 0;
+	}
+
+	.footer_inner {
+		width: 83.3%;
+	}
+
+	.footer_name {
+		font-size: 12px;
+		letter-spacing: -0.43px;
+	}
+
+	.footer_detail {
+		margin-top: 2.88%;
+		font-size: 11px;
+	}
+
+	.footer_detail_txt {
+		margin-bottom: 1%;
+	}
+
+	.footer_detail_txt:first-child::after {
+		height: 8px;
+	}
+
+	.footer_tab {
+		margin-top: 4.41%;
+	}
+
+	.footer_tab_item {
+		font-size: 11px;
+	}
+
+	.footer_tab_item::after {
+		height: 8px;
+	}
+}

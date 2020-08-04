@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+    <g fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 73 1)">
+        <g>
+            <path stroke="#666" d="M17.333 10.4L32.933 26.006 17.345 41.6" transform="matrix(-1 0 0 1 60 10)"/>
+            <path d="M0 0H52V52H0z" transform="matrix(-1 0 0 1 60 10)"/>
+        </g>
+        <circle cx="36" cy="36" r="36" stroke="#CBCDD4" stroke-width=".5"/>
+    </g>
+</svg>
