@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const QuestionItem = ({ question }) => {
 	const [isOpen, setOpen] = useState(false);
+	
+	useEffect(() => {
+		setOpen(false);
+	},[question])
 	const createMarkup = () => {
 		if (question) {
 			return {
@@ -32,6 +36,7 @@ const QuestionItem = ({ question }) => {
 			{isOpen ? (
 				<div className="answer">
 					<div dangerouslySetInnerHTML={createMarkup()}></div>
+					{/* {question ? question.answer:null} */}
 				</div>
 			) : null}
 		</li>
