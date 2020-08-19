@@ -2458,7 +2458,8 @@ input[type="text"] {
 	.notice_num_b,
 	.notice_date,
 	.notice_date_b {
-		font-size: 12px;
+		font-size: 16px;
+		line-height: 1.5;
 	}
 
 	.notice_num,
@@ -2468,9 +2469,6 @@ input[type="text"] {
 
 	.notice_tit {
 		width: 85%;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 
 	.notice_tit_b {

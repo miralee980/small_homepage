@@ -1,12 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import FAQ from "./screens/FAQ";
+import Notice from "./screens/Notice";
+import NoticeContent from "./screens/Notice/NoticeContent";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
 	<BrowserRouter basename="/">
-		<App />
+		<Switch>
+			<Route exact path="/" component={App} />
+			<Route exact path="/faq" component={FAQ} />
+			<Route exact path="/notice" component={Notice} />
+			<Route exact path="/notice_0" component={NoticeContent} />
+			<Route exact path="/notice_1" component={NoticeContent} />
+		</Switch>
 	</BrowserRouter>,
 	document.getElementById("root")
 );

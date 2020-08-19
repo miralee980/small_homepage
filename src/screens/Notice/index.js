@@ -16,7 +16,7 @@ function Notice() {
 	const makeData = () => {
 		var list = [];
 		var i = 0;
-		while (i < 40) {
+		while (i < 2) {
 			let data = {
 				num: i,
 				title: "[공지] 서울사랑상품권 추가발행 일정 및 할인율 안내 - " + i,
@@ -35,7 +35,7 @@ function Notice() {
 		for (var i = (selNum - 1) * DEFINE_LIST_NUM; i < endNum; i++) {
 			dataList.push(
 				<li className="notice_wrap" key={i}>
-					<Link to={"/notice_content"}>
+					<Link to={`/notice_${i}`}>
 						<div className="notice_tit_wrap on">
 							<span className="notice_num">{data[i].num}</span>
 							<p className="notice_tit">{data[i].title}</p>

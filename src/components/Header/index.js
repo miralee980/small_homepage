@@ -15,7 +15,7 @@ const Header = (props) => {
 						</Link>
 					</li>
 					<li className="header_nav_item">
-						<Link to="notice" className="nav_txt">
+						<Link to="/notice" className="nav_txt">
 							공지사항
 						</Link>
 					</li>
