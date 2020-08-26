@@ -14,17 +14,28 @@ function Notice() {
 	}, []);
 
 	const makeData = () => {
-		var list = [];
-		var i = 0;
-		while (i < 2) {
-			let data = {
-				num: i,
-				title: "[공지] 서울사랑상품권 추가발행 일정 및 할인율 안내 - " + i,
-				date: "2020.07.17"
-			};
-			list.push(data);
-			i++;
-		}
+		var list = [
+			{
+				num: "01",
+				title: "[공지] 내 손 안의 자산관리 비서, 머니포트 앱 오픈 안내",
+				date: "2020.08.31"
+			},
+			{
+				num: "02",
+				title: "[이벤트] 내 손안의 자산관리 비서, 머니포트 오픈 기념 이벤트!",
+				date: "2020.08.31"
+			}
+		];
+		// var i = 0;
+		// while (i < 2) {
+		// 	let data = {
+		// 		num: i,
+		// 		title: "[공지] 서울사랑상품권 추가발행 일정 및 할인율 안내 - " + i,
+		// 		date: "2020.07.17"
+		// 	};
+		// 	list.push(data);
+		// 	i++;
+		// }
 		setData(list);
 		setTotalNum(list.length);
 	};
@@ -73,11 +84,11 @@ function Notice() {
 					setSelNum={setSelNum}
 				/>
 			</div>
-			<div className="view_btn_wrap">
+			{/* <div className="view_btn_wrap">
 				<Link to={"/notice_write"} className="btn_tit">
 					글쓰기
 				</Link>
-			</div>
+			</div> */}
 		</div>
 	);
 }
