@@ -25,8 +25,11 @@ function NoticeContent2() {
 							<span className="notice_date">2020.08.31</span>
 						</div>
 					</li>
-					<li className="view_content">
-						<p className="view_content_tit">
+					<li class="view_content">
+						<p class="view_content_tit">
+							내 손안의 자산관리 비서, 머니포트 오픈 기념 이벤트!
+							<br />
+							<br />
 							이벤트 기간 중 머니포트에서 투자 상품을 구매하시면{" "}
 							<b
 								style={{
@@ -50,12 +53,16 @@ function NoticeContent2() {
 							<br />
 							* 이벤트 기간 : 2020.08.25~2020.11.24
 							<br />
-							* 이벤트 대상 : 머니포트 가입자 중 투자 자문 상품 구매 고객
+							* 이벤트 대상 : 머니포트 가입자 중 상품 구매 고객
 							<br />
-							* 이벤트 참여 방법 : 머니포트 내 투자자문 상품 구매 시 쿠폰 자동
-							적용
+							* 이벤트 참여 방법 : 머니포트 내 상품 구매 시 쿠폰 자동 적용
 							<br />
-							* 특이사항 : 중복 적용 가능(ex. 투자 상품 2개 구매 시 전부 적용)
+							* 특이사항 : <br />
+							&nbsp;&nbsp;&nbsp;&nbsp;1. 이벤트 기간 중 사용 횟수 제한 없이 상품
+							구매 시 모두 적용
+							<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;2. 쿠폰은 머니포트 내 모든 상품에
+							적용됩니다.
 							<br />
 							<br />
 							<b
@@ -66,10 +73,10 @@ function NoticeContent2() {
 								[이벤트 유의사항]
 							</b>
 							<br />
-							* 본 이벤트는 머니포트 내 투자자문 상품 구매 시 쿠폰이 자동으로
-							적용되는 이벤트입니다.
+							* 본 이벤트는 머니포트 내 상품 구매 시 쿠폰이 자동으로 적용되는
+							이벤트입니다.
 							<br />
-							* 테마 상품 구매에는 적용되지 않습니다.
+							* 쿠폰 지급 및 적용에 대한 별도 알림 서비스는 제공하지 않습니다.
 							<br />
 							* 이벤트 관련 문의는 cs@qunatecinvestment.co.kr로 전달
 							부탁드리겠습니다.
