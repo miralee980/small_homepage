@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="347" height="90" viewBox="0 0 347 90">
+    <defs>
+        <linearGradient id="leyo4ezd8b" x1="0%" x2="84.817%" y1="50.002%" y2="50.002%">
+            <stop offset="0%" stop-color="#00B1FF"/>
+            <stop offset="100%" stop-color="#6359FA"/>
+        </linearGradient>
+        <path id="qro8vmi98a" d="M-7 -4H340V86H-7z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(7 4)">
+        <g fill-rule="nonzero">
+            <path fill="#1AB2FF" d="M71.64 76.86V0H56.43v28.35h-11.7V1.8H0v71.46h44.73V42.57h11.7v34.29h15.21zM29.52 59.13H15.21v-43.2h14.31v43.2z" transform="translate(.81 .5)"/>
+            <path fill="#3384FC" d="M157.86 76.86V0h-15.21v76.86h15.21zm-39.15-3.6c7.38 0 15.21-1.35 19.89-3.69V55.71c-4.68 2.25-12.6 3.69-19.89 3.69H102.6V1.35H86.94v71.91h31.77z" transform="translate(.81 .5)"/>
+            <path fill="#5E6FFF" d="M247.86 74.16V60.12h-31.23V48.06h27.72V34.2h-11.7V15.75h10.89V1.8h-69.12v13.95h10.89V34.2h-11.7v13.86h27.72v12.06H170.1v14.04h77.76zM217.44 34.2h-16.92V15.75h16.92V34.2z" transform="translate(.81 .5)"/>
+            <path fill="#6E66FF" d="M331.11 53.1V39.78h-55.08v-6.03h52.92v-12.6h-52.92v-6.03h54.18V1.8H261v51.3h70.11zm3.33 21.06V60.21h-77.76v13.95h77.76z" transform="translate(.81 .5)"/>
+        </g>
+        <use fill="#D8D8D8" xlink:href="#qro8vmi98a"/>
+        <use fill="url(#leyo4ezd8b)" xlink:href="#qro8vmi98a"/>
+    </g>
+</svg>
