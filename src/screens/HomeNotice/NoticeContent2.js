@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NoticeContent2() {
 	return (
@@ -86,11 +86,11 @@ function NoticeContent2() {
 				</ul>
 			</div>
 
-			{/* <div className="view_btn_wrap">
-				<Link to={"/notice"} className="btn_tit">
+			<div className="view_btn_wrap">
+				<Link to={"/home/notice"} className="btn_tit">
 					목록
 				</Link>
-			</div> */}
+			</div>
 		</div>
 	);
 }

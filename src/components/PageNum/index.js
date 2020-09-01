@@ -41,12 +41,10 @@ const PageNum = (props) => {
 						onPrevClickHandler();
 					}}
 				>
-					<p>
-						<img
-							src={require("../../assets/images/ic-m-partners-arrowleft.svg")}
-							alt="prev_btn"
-						/>
-					</p>
+					<img
+						src={require("../../assets/images/ic-m-partners-arrowleft.svg")}
+						alt="prev_btn"
+					/>
 				</li>
 				{list}
 				<li
@@ -55,12 +53,10 @@ const PageNum = (props) => {
 						onNextClickHandler(pageNum);
 					}}
 				>
-					<p>
-						<img
-							src={require("../../assets/images/ic-m-partners-arrowright.svg")}
-							alt="next_btn"
-						/>
-					</p>
+					<img
+						src={require("../../assets/images/ic-m-partners-arrowright.svg")}
+						alt="next_btn"
+					/>
 				</li>
 			</ul>
 		</div>

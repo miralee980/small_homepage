@@ -37,7 +37,7 @@ function Notice() {
 		for (var i = (selNum - 1) * DEFINE_LIST_NUM; i < endNum; i++) {
 			dataList.push(
 				<li className="notice_wrap" key={i}>
-					<Link to={`/notice_${i}`}>
+					<Link to={`/home/notice_${i}`}>
 						<div className="notice_tit_wrap on">
 							<span className="notice_num">{data[i].num}</span>
 							<p className="notice_tit">{data[i].title}</p>

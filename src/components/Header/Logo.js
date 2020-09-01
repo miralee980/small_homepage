@@ -7,16 +7,9 @@ const Logo = () => {
 			<Link to="/">
 				{/* Logo_Large */}
 				<img
-					src={require("../../assets/images/logo-mp-lg@3x.png")}
+					src={require("../../assets/images/logo-mp-wt@3x.png")}
 					alt="logo"
-					className="logo_lg"
-				/>
-
-				{/* Logo_Small */}
-				<img
-					src={require("../../assets/images/logo-mp-sm@3x.png")}
-					alt="logo"
-					className="logo_sm"
+					className="logo"
 				/>
 			</Link>
 		</div>

@@ -31,53 +31,6 @@ body {
 	width: 100%;
 }
 
-.textEdit {
-	width: 100%;
-	height: 100%;
-	background: #f3f1f2;
-	font-family: sans-serif;
-}
-
-.app {
-	margin: 1rem 4rem;
-	display: block;
-	position: relative;
-	top: 60px;
-}
-
-.app .ql-container {
-	border-bottom-left-radius: 0.5em;
-}
-
-.app .ql-container {
-	border-bottom-left-radius: 0.5em;
-	border-bottom-right-radius: 0.5em;
-	background: #fefcfc;
-}
-
-/* Snow Theme */
-.app .ql-snow.ql-toolbar {
-	display: block;
-	background: #eaecec;
-	border-top-left-radius: 0.5em;
-	border-top-right-radius: 0.5em;
-}
-
-/* Bubble Theme */
-.app .ql-bubble .ql-editor {
-	border: 1px solid #ccc;
-	border-radius: 0.5em;
-}
-
-.app .ql-editor {
-	min-height: 18em;
-}
-
-.themeSwitcher {
-	margin-top: 0.5em;
-	font-size: small;
-}
-
 .wrapper {
 	width: 100%;
 	font-family: "Noto Sans KR", sans-serif;
@@ -151,7 +104,7 @@ body {
 	line-height: normal;
 	letter-spacing: normal;
 	text-align: center;
-	color: rgba(229, 229, 229, 0.75);
+	color: #ffffff;
 }
 
 .nav_txt.active {
@@ -266,7 +219,47 @@ input[type="text"] {
 	margin-top: 12.25%;
 }
 
+.stocks_list {
+	width: 100%;
+	text-align: center;
+}
+
 .faq_select {
+	display: none;
+}
+
+.stocks_list li {
+	display: inline-block;
+}
+
+.list_item {
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #b6b6b6;
+	cursor: pointer;
+}
+
+.list_item.active {
+	color: #343c55;
+	font-weight: bold;
+}
+
+.stocks_list li::after {
+	content: "";
+	display: inline-block;
+	font-size: 0;
+	width: 1px;
+	height: 12px;
+	opacity: 0.5;
+	background-color: #ccc;
+}
+
+.stocks_list li:last-child::after {
 	display: none;
 }
 
@@ -410,20 +403,6 @@ input[type="text"] {
 	line-height: normal;
 	letter-spacing: normal;
 	color: #808080;
-}
-
-.footer_detail_txt {
-	margin-bottom: 0.5%;
-}
-
-.footer_detail_txt:first-child::after {
-	content: "";
-	display: inline-block;
-	background: url("../assets/images/line-footer-666.svg");
-	width: 1px;
-	height: 10px;
-	margin: 0 6px;
-	margin-top: 5px;
 }
 
 .footer_tab {
@@ -593,6 +572,16 @@ input[type="text"] {
 
 	.faq_list {
 		margin-top: 9.91%;
+	}
+
+	.list_item {
+		padding: 0 16px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	.stocks_list {
+		display: none;
 	}
 
 	.faq_select {
@@ -773,43 +762,5 @@ input[type="text"] {
 		font-style: normal;
 		line-height: 1.63;
 		letter-spacing: -0.26px;
-	}
-
-	.footer_wrap {
-		padding: 9.73% 0;
-	}
-
-	.footer_inner {
-		width: 83.3%;
-	}
-
-	.footer_name {
-		font-size: 12px;
-		letter-spacing: -0.43px;
-	}
-
-	.footer_detail {
-		margin-top: 2.88%;
-		font-size: 11px;
-	}
-
-	.footer_detail_txt {
-		margin-bottom: 1%;
-	}
-
-	.footer_detail_txt:first-child::after {
-		height: 8px;
-	}
-
-	.footer_tab {
-		margin-top: 4.41%;
-	}
-
-	.footer_tab_item {
-		font-size: 11px;
-	}
-
-	.footer_tab_item::after {
-		height: 8px;
 	}
 }

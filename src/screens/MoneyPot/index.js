@@ -1,10 +1,8 @@
 import React from "react";
-// import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 import FooterContainer from "../../components/Footer/FooterContainer";
-import VideoScreen from "./VideoScreen";
+import MoneyPotMain from "./MoneyPotMain";
 import MoneyService from "./MoneyService";
-import TimeService from "./TimeService";
 import Function from "./Function";
 import Download from "./Download";
 const FULLPAGE_LICENSE_KEY = "10279CE1-488E46AB-917B4BFB-13CAB35A";
@@ -44,9 +42,6 @@ class MoneyPot extends React.Component {
 		window.fullpage_api.moveTo(4);
 	}
 
-	// moveSectionDown() {
-	// 	window.fullpage_api.moveSectionDown();
-	// }
 	render() {
 		const Menu = () => (
 			<div className="vertical_nav">
@@ -73,23 +68,13 @@ class MoneyPot extends React.Component {
 						<p className="nav_item" onClick={() => this.moveSectionService()}>
 							<span className="nav_small"></span>
 							<span
-								className={
-									this.state.selSection === 1 && this.state.selSlide === 0
-										? "active_blue"
-										: this.state.selSection === 1 && this.state.selSlide === 1
-										? "active_white"
-										: ""
-								}
+								className={this.state.selSection === 1 ? "active_white" : ""}
 							></span>
 						</p>
 
 						<span
 							className={
-								this.state.selSection === 1 && this.state.selSlide === 0
-									? "active_title blue"
-									: this.state.selSection === 1 && this.state.selSlide === 1
-									? "active_title"
-									: "nav_title"
+								this.state.selSection === 1 ? "active_title" : "nav_title"
 							}
 						>
 							서비스 소개
@@ -139,9 +124,6 @@ class MoneyPot extends React.Component {
 				{/* CONTENT */}
 				<Menu />
 				<ReactFullpage
-					// debug /* Debug logging */
-					// fullpage options
-					// anchors={anchors}
 					licenseKey={FULLPAGE_LICENSE_KEY}
 					slidesNavigation={true}
 					onLeave={this.onLeave.bind(this)}
@@ -150,15 +132,10 @@ class MoneyPot extends React.Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div className="section section1">
-									<VideoScreen />
+									<MoneyPotMain />
 								</div>
-								<div className="section">
-									<div className="slide  section2" id="slide1">
-										<MoneyService />
-									</div>
-									<div className="slide section2_blue" id="slide2">
-										<TimeService />
-									</div>
+								<div className="section  section2">
+									<MoneyService />
 								</div>
 								<div className="section section3">
 									<Function />

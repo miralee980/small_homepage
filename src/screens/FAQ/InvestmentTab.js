@@ -5,50 +5,52 @@ const InvestmentTab = ({ selFaqList, setFaqList }) => {
 		<div className="faq_list">
 			<ul className="stocks_list">
 				<li>
-					<p
+					<span
 						onClick={() => setFaqList("all")}
 						className={selFaqList === "all" ? "list_item active" : "list_item"}
 					>
 						전체
-					</p>
+					</span>
 				</li>
 				<li>
-					<p
+					<span
 						onClick={() => setFaqList("investment")}
 						className={
 							selFaqList === "investment" ? "list_item active" : "list_item"
 						}
 					>
 						투자 자문 상품
-					</p>
+					</span>
 				</li>
 				<li>
-					<p
+					<span
 						onClick={() => setFaqList("account")}
 						className={
 							selFaqList === "account" ? "list_item active" : "list_item"
 						}
 					>
 						계좌 개설
-					</p>
+					</span>
 				</li>
 				<li>
-					<p
+					<span
 						onClick={() => setFaqList("order")}
 						className={
 							selFaqList === "order" ? "list_item active" : "list_item"
 						}
 					>
 						상품 주문
-					</p>
+					</span>
 				</li>
 				<li>
-					<p
+					<span
 						onClick={() => setFaqList("moneypot")}
-						className={selFaqList === "moneypot" ? "list_item active" : "list_item"}
+						className={
+							selFaqList === "moneypot" ? "list_item active" : "list_item"
+						}
 					>
 						머니포트 앱 사용
-					</p>
+					</span>
 				</li>
 			</ul>
 
