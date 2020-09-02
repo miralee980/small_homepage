@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({ companyInfo }) => {
+const Footer = (/*{ companyInfo }*/) => {
 	return (
 		<footer className="footer">
 			<div className="footer_inner">
@@ -8,8 +8,13 @@ const Footer = ({ companyInfo }) => {
 				<div className="footer_detail">
 					<span className="detail_txt">사업자등록번호 146-81-01264</span>
 					<span className="detail_txt">대표 최용석</span> <br />
-					<span className="detail_txt">{companyInfo.location}</span> <br />
-					<span className="detail_txt">{companyInfo.location_en}</span>
+					<span className="detail_txt">
+						서울특별시 영등포구 여의대로 14 | 콴텍투자자문(주) 14층
+					</span>{" "}
+					<br />
+					<span className="detail_txt">
+						14, Yeoui-daero, Yeongdeungpo-gu, Seoul, Republic of Korea
+					</span>
 				</div>
 
 				<div className="footer_tab">
