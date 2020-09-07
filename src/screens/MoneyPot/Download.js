@@ -22,7 +22,11 @@ const Download = () => {
 				</div>
 
 				<div className="download_btn">
-					<a href="#">
+					<a
+						href="https://play.google.com/store/apps/details?id=quantec.com.moneypot"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<img
 							src={require("../../assets/images/ic-googleplaystore@3x.png")}
 							alt="img_google"
