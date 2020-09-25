@@ -16,14 +16,22 @@ function Notice() {
 	const makeData = () => {
 		var list = [
 			{
-				num: "01",
-				title: "[공지] 내 손 안의 자산관리 비서, 머니포트 앱 오픈 안내",
-				date: "2020.08.31"
+				num: "03",
+				title: "[공지] 주민등록증 진위 확인 서비스 중단",
+				date: "2020.09.25",
+				url: "/home/notice_2"
 			},
 			{
 				num: "02",
 				title: "[이벤트] 내 손안의 자산관리 비서, 머니포트 오픈 기념 이벤트!",
-				date: "2020.08.31"
+				date: "2020.08.31",
+				url: "/home/notice_1"
+			},
+			{
+				num: "01",
+				title: "[공지] 내 손 안의 자산관리 비서, 머니포트 앱 오픈 안내",
+				date: "2020.08.31",
+				url: "/home/notice_0"
 			}
 		];
 
@@ -37,7 +45,7 @@ function Notice() {
 		for (var i = (selNum - 1) * DEFINE_LIST_NUM; i < endNum; i++) {
 			dataList.push(
 				<li className="notice_wrap" key={i}>
-					<Link to={`/home/notice_${i}`}>
+					<Link to={`${data[i].url}`}>
 						<div className="notice_tit_wrap on">
 							<span className="notice_num">{data[i].num}</span>
 							<p className="notice_tit">{data[i].title}</p>

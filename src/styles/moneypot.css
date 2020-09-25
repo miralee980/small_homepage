@@ -736,6 +736,21 @@ body {
 	display: none;
 }
 
+.footer_sns {
+	width: 100%;
+	margin-top: 20px;
+	font-size: 0;
+}
+
+.footer_item {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.footer_item:first-child {
+	padding-left: 0;
+}
+
 /* FAQ */
 .wrapper {
 	width: 100%;

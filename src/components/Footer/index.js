@@ -35,6 +35,32 @@ const Footer = (/*{ companyInfo }*/) => {
 						개인정보처리방침
 					</a>
 				</div>
+				<div className="footer_sns">
+					<div className="footer_item">
+						<a
+							href="https://www.facebook.com/moneypot.official/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								src={require("../../assets/images/ic-footer-facebook.svg")}
+								alt="facebook"
+							/>
+						</a>
+					</div>
+					<div className="footer_item">
+						<a
+							href="https://blog.naver.com/moneypot_official"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								src={require("../../assets/images/ic-footer-blog.svg")}
+								alt="blog"
+							/>
+						</a>
+					</div>
+				</div>
 			</div>
 		</footer>
 	);

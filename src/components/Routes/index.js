@@ -4,6 +4,7 @@ import MoneyPot from "../../screens/MoneyPot/index";
 import MainNotice from "../../screens/HomeNotice/index";
 import NoticeContent1 from "../../screens/HomeNotice/NoticeContent1";
 import NoticeContent2 from "../../screens/HomeNotice/NoticeContent2";
+import NoticeContent3 from "../../screens/HomeNotice/NoticeContent3";
 // import Editor from "../../screens/Notice/MyComponent";
 import HomeFAQ from "../../screens/HomeFAQ";
 
@@ -15,6 +16,7 @@ const Routes = () => {
 			<Route exact path="/home/notice" component={MainNotice} />
 			<Route exact path="/home/notice_0" component={NoticeContent1} />
 			<Route exact path="/home/notice_1" component={NoticeContent2} />
+			<Route exact path="/home/notice_2" component={NoticeContent3} />
 			{/*<Route path="/notice_write" component={Editor} /> */}
 		</Switch>
 	);
