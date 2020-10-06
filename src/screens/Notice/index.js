@@ -16,6 +16,12 @@ function Notice() {
 	const makeData = () => {
 		var list = [
 			{
+				num: "04",
+				title: "[공지] KB금융그룹 OpenAPI 서비스 중단",
+				date: "2020.10.06",
+				url: "/notice_3"
+			},
+			{
 				num: "03",
 				title: "[공지] 주민등록증 진위 확인 서비스 중단",
 				date: "2020.09.25",

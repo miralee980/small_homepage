@@ -5,6 +5,7 @@ import Notice from "./screens/Notice";
 import NoticeContent1 from "./screens/Notice/NoticeContent1";
 import NoticeContent2 from "./screens/Notice/NoticeContent2";
 import NoticeContent3 from "./screens/Notice/NoticeContent3";
+import NoticeContent4 from "./screens/Notice/NoticeContent4";
 
 import App from "./App";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -20,6 +21,7 @@ ReactDOM.render(
 			<Route exact path="/notice_0" component={NoticeContent1} />
 			<Route exact path="/notice_1" component={NoticeContent2} />
 			<Route exact path="/notice_2" component={NoticeContent3} />
+			<Route exact path="/notice_3" component={NoticeContent4} />
 		</Switch>
 	</BrowserRouter>,
 	document.getElementById("root")
