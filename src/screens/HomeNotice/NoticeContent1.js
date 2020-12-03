@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+const queryString = require("query-string");
 
-function NoticeContent1() {
+function NoticeContent1({ location }) {
+	const { search } = location;
+	const queryObj = queryString.parse(search);
+	const { num, date } = queryObj;
 	return (
 		<div className="wrapper">
 			<div className="title_wrap">
@@ -18,11 +22,11 @@ function NoticeContent1() {
 								borderBottom: "1px solid #343c55"
 							}}
 						>
-							<span className="notice_num">01</span>
+							<span className="notice_num">{num}</span>
 							<p className="notice_tit">
 								[공지] 내 손 안의 자산관리 비서, 머니포트 앱 오픈 안내
 							</p>
-							<span className="notice_date">2020.08.31</span>
+							<span className="notice_date">{date}</span>
 						</div>
 					</li>
 					<li className="view_content">

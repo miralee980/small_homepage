@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+const queryString = require("query-string");
 
-function NoticeContent3() {
+function NoticeContent3({ location }) {
+	const { search } = location;
+	const queryObj = queryString.parse(search);
+	const { num, date } = queryObj;
 	return (
 		<div className="wrapper">
 			<div className="title_wrap">
@@ -18,9 +21,9 @@ function NoticeContent3() {
 								borderBottom: "1px solid #343c55"
 							}}
 						>
-							<span className="notice_num">03</span>
+							<span className="notice_num">{num}</span>
 							<p className="notice_tit">주민등록증 진위 확인 서비스 중단</p>
-							<span className="notice_date">2020.09.25</span>
+							<span className="notice_date">{date}</span>
 						</div>
 					</li>
 					<li class="view_content">
