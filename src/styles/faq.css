@@ -120,40 +120,54 @@ body {
 
 .title_wrap {
 	width: 100%;
-	background-image: url("../assets/images/img-bg-faq@3x.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding-bottom: 2.51%;
+	background-color: #f9fafb;
+	padding-bottom: 68px;
 }
 
 .title_faq {
-	font-size: 36px;
-	font-weight: 900;
+	max-width: 900px;
+	margin: 0 auto;
+	font-size: 40px;
+	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
-	letter-spacing: -0.54px;
+	letter-spacing: -1.5px;
 	text-align: center;
-	color: #ffffff;
-	padding-top: 8.35%;
+	color: #3d3f42;
+	padding-top: 60px;
+}
+
+.text_faq {
+	max-width: 900px;
+	margin: 0 auto;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -1px;
+	text-align: center;
+	color: #3d3f42;
+	margin-top: 13px;
 }
 
 .search_wrap {
-	width: 80.7%;
-	max-width: 800px;
 	margin: 0 auto;
+	width: 100%;
+	max-width: 685px;
 	background-color: #ffffff;
-	border-radius: 27px;
+	border-radius: 4px;
 	border: 1px solid #eaeaea;
-	margin-top: 3.34%;
+	margin-top: 78px;
 	position: relative;
 	padding: 14px 0;
+	text-align: left;
 }
 
 .ic_search {
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 	position: absolute;
 	left: 20px;
 	top: 14px;
@@ -162,13 +176,13 @@ body {
 .search_input {
 	display: block;
 	box-sizing: border-box;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
-	letter-spacing: -0.27px;
-	color: #343c55;
+	letter-spacing: -0.5px;
+	color: #3d3f42;
 	margin-left: 52px;
 	border: none;
 	width: 90%;
@@ -177,12 +191,12 @@ body {
 }
 
 .search_input::placeholder {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
-	letter-spacing: -0.27px;
+	letter-spacing: -0.5px;
 	color: #cccccc;
 }
 
@@ -192,9 +206,7 @@ input[type="text"] {
 }
 
 .faq_cont {
-	width: 90.9%;
-	max-width: 900px;
-	margin: 0 auto;
+	width: 100%;
 }
 
 .stocks,
@@ -210,16 +222,22 @@ input[type="text"] {
 
 .stocks.active,
 .advisory.active {
-	color: #343c55;
+	color: #3d3f42;
 	padding-bottom: 0.56%;
 	border-bottom: 3px solid #4e7cff;
 }
 
 .faq_list {
-	margin-top: 12.25%;
+	width: 100%;
+	background-color: #f9fafb;
+	margin: 0 auto;
+	padding-bottom: 22px;
+	border-bottom: 1px solid #dedede;
 }
 
 .stocks_list {
+	max-width: 900px;
+	margin: 0 auto;
 	width: 100%;
 	text-align: center;
 }
@@ -234,18 +252,17 @@ input[type="text"] {
 
 .list_item {
 	padding: 0 20px;
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
 	letter-spacing: normal;
 	color: #b6b6b6;
-	cursor: pointer;
 }
 
 .list_item.active {
-	color: #343c55;
+	color: #3d3f42;
 	font-weight: bold;
 }
 
@@ -265,8 +282,10 @@ input[type="text"] {
 
 .faq_box {
 	width: 100%;
-	margin-top: 4.01%;
-	margin-bottom: 4.46%;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top: 22px;
+	margin-bottom: 100px;
 	border-bottom: 1px solid #ececec;
 	position: relative;
 }
@@ -282,43 +301,65 @@ input[type="text"] {
 }
 
 .question {
-	padding: 3.58% 2.24% 3.58% 2.24%;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	padding: 44px 50px;
 	border-top: 1px solid #ececec;
+	cursor: pointer;
+	border-bottom: 1px solid #dedede;
 }
 
-.question_tit {
-	padding-left: 34px;
-	font-size: 16px;
-	font-weight: normal;
+.question:first-child {
+	border-top: none;
+}
+
+.question_section {
+	font-size: 18px;
+	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
-	letter-spacing: normal;
-	color: #343c55;
-	margin-top: 5px;
+	letter-spacing: -0.5px;
+	color: #9a9a9a;
+}
+
+.question_tit {
+	font-size: 22px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.5px;
+	color: #3d3f42;
+	margin-top: 10px;
+	padding-right: 96px;
 }
 
 .question_tit.active {
 	position: relative;
 	font-weight: bold;
+	color: #4e7cff;
 }
 
 .ic_arrow_down {
-	width: 30px;
-	height: 30px;
+	width: 46px;
+	height: 46px;
 	position: absolute;
-	right: 2.4%;
-	top: 33%;
+	right: 45px;
+	top: 50%;
+	margin-top: -23px;
 }
 
 .ic_arrow_up {
-	width: 30px;
-	height: 30px;
+	width: 46px;
+	height: 46px;
 	position: absolute;
-	right: 2.4%;
-	top: 10%;
+	right: 45px;
+	top: 50%;
+	margin-top: -23px;
 }
-
+/* 
 .question::before {
 	content: "Q";
 	display: inline-block;
@@ -338,23 +379,24 @@ input[type="text"] {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-}
+} */
 
 .answer {
-	padding: 2.91% 6% 3.13% 6%;
+	padding: 40px 44px 44px 44px;
 	background-color: #f9fafb;
-	border-top: 1px solid #eaeaea;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
 }
 
 .answer_txt {
-	font-size: 14px;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.63;
-	letter-spacing: -0.3px;
-	color: #343c55;
-	margin-bottom: 1.83%;
+	letter-spacing: -0.5px;
+	color: #3d3f42;
+	margin-bottom: 10px;
 }
 
 .txt_md {
@@ -451,25 +493,24 @@ input[type="text"] {
 
 	/* Contents */
 
-	.title_wrap {
-		padding-bottom: 7.29%;
-	}
-
 	.title_faq {
-		font-size: 28px;
-		font-weight: 900;
+		width: 100%;
+		max-width: 770px;
+		margin: 0 auto;
+		font-size: 40px;
+		font-weight: bold;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: normal;
-		letter-spacing: -0.42px;
+		letter-spacing: -1.5px;
 		text-align: center;
-		color: #ffffff;
-		padding-top: 18.21%;
+		color: #3d3f42;
+		padding-top: 60px;
 	}
 
 	.search_wrap {
-		max-width: none;
-		margin-top: 4.86%;
+		max-width: 770px;
+		margin-top: 78px;
 	}
 
 	.faq_cont {
@@ -481,20 +522,99 @@ input[type="text"] {
 	}
 
 	.faq_list {
-		margin-top: 10.25%;
+		width: 100%;
+		background-color: #f9fafb;
+		margin: 0 auto;
+		padding-bottom: 22px;
+		border-bottom: 1px solid #dedede;
+	}
+
+	.stocks_list {
+		max-width: 770x;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	.list_item {
+		padding: 0 20px;
+		font-size: 20px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #b6b6b6;
+	}
+
+	.faq_box {
+		width: 100%;
+		max-width: 770px;
+		margin: 0 auto;
+		margin-top: 22px;
+		margin-bottom: 100px;
+		border-bottom: 1px solid #ececec;
+		position: relative;
 	}
 
 	.question {
-		padding: 3.47% 2.24% 3.47% 2.24%;
+		width: 100%;
+		display: inline-block;
+		position: relative;
+		padding: 36px;
+		border-top: 1px solid #ececec;
+		cursor: pointer;
+		border-bottom: 1px solid #dedede;
 	}
 
-	/* Footer */
-	.footer_wrap {
-		padding: 6.57% 0;
+	.question_section {
+		font-size: 16px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.5px;
+		color: #9a9a9a;
 	}
 
-	.footer_inner {
-		max-width: none;
+	.question_tit {
+		font-size: 20px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.5px;
+		color: #3d3f42;
+		margin-top: 10px;
+		padding-right: 96px;
+	}
+
+	.ic_arrow_down,
+	.ic_arrow_up {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		right: 36px;
+		top: 50%;
+		margin-top: -20px;
+	}
+
+	.answer {
+		padding: 36px;
+		background-color: #f9fafb;
+		border-top: 1px solid #dedede;
+		border-bottom: 1px solid #dedede;
+	}
+
+	.answer_txt {
+		font-size: 16px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.63;
+		letter-spacing: -0.5px;
+		color: #3d3f42;
+		margin-bottom: 10px;
 	}
 }
 
@@ -515,30 +635,46 @@ input[type="text"] {
 	/* Content */
 
 	.title_wrap {
-		padding-bottom: 6.27%;
+		padding-bottom: 48px;
 	}
 
 	.title_faq {
-		font-size: 24px;
-		font-weight: 900;
+		max-width: 580px;
+		margin: 0 auto;
+		font-size: 32px;
+		font-weight: bold;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: normal;
-		letter-spacing: -0.42px;
+		letter-spacing: -1.5px;
 		text-align: center;
-		color: #ffffff;
-		padding-top: 18.28%;
+		color: #3d3f42;
+		padding-top: 60px;
+	}
+
+	.text_faq {
+		font-size: 16px;
 	}
 
 	.search_wrap {
-		margin-top: 6.27%;
-		width: 79.1%;
+		margin: 0 auto;
+		width: 90.9%;
+		max-width: 608px;
+		background-color: #ffffff;
+		border-radius: 4px;
+		border: 1px solid #eaeaea;
+		margin-top: 48px;
+		position: relative;
+		padding: 14px 0;
+		text-align: left;
 	}
 
 	.ic_search {
-		width: 18px;
-		height: 18px;
-		top: 15px;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		left: 20px;
+		top: 14px;
 	}
 
 	.search_input {
@@ -546,8 +682,8 @@ input[type="text"] {
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
-		line-height: 1.13;
-		letter-spacing: -0.24px;
+		line-height: normal;
+		letter-spacing: -0.5px;
 		margin-left: 48px;
 		margin-top: 0.3%;
 	}
@@ -558,11 +694,11 @@ input[type="text"] {
 		font-stretch: normal;
 		font-style: normal;
 		line-height: 1.13;
-		letter-spacing: -0.24px;
+		letter-spacing: -0.5px;
 	}
 
 	.faq_cont {
-		width: 79.1%;
+		width: 100%;
 	}
 
 	.stocks.active,
@@ -571,7 +707,9 @@ input[type="text"] {
 	}
 
 	.faq_list {
-		margin-top: 9.91%;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 30px;
 	}
 
 	.list_item {
@@ -586,20 +724,22 @@ input[type="text"] {
 
 	.faq_select {
 		display: inline-block;
-		width: 100%;
+		width: 90.9%;
+		max-width: 608px;
+		margin: 0 auto;
 		border: 1px solid #eaeaea;
 		border-radius: 4px;
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;
 
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: bold;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: normal;
 		letter-spacing: normal;
-		color: #343c55;
+		color: #3d3f42;
 		padding: 16px 20px;
 		background-image: url("../assets/images/ic-arrow-down.svg");
 		background-repeat: no-repeat;
@@ -612,23 +752,33 @@ input[type="text"] {
 	}
 
 	.faq_box {
-		margin-top: 4.96%;
-		margin-bottom: 6.61%;
+		width: 100%;
+		max-width: 608px;
+		margin-top: 10px;
 	}
 
 	.question {
-		padding: 5.14% 3.32% 5.14% 3.32%;
+		padding: 30px 36px;
+	}
+
+	.question_section {
+		font-size: 14px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.5px;
+		color: #9a9a9a;
 	}
 
 	.question_tit {
-		font-size: 14px;
-		font-weight: normal;
+		font-size: 16px;
+		font-weight: bold;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: normal;
 		letter-spacing: normal;
-		color: #343c55;
-		padding-left: 27px;
+		color: #3d3f42;
 		margin-top: 4px;
 	}
 
@@ -646,18 +796,18 @@ input[type="text"] {
 	}
 
 	.answer {
-		padding: 4.15% 7.74%;
+		padding: 30px 36px;
 	}
 
 	.answer_txt {
-		font-size: 13px;
-		font-weight: 400;
+		font-size: 14px;
+		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: 1.63;
-		letter-spacing: -0.28px;
-		color: #343c55;
-		margin-bottom: 3.18%;
+		letter-spacing: -0.5px;
+		color: #3d3f42;
+		margin-bottom: 6px;
 	}
 
 	.footer_wrap {
@@ -675,12 +825,16 @@ input[type="text"] {
 
 @media screen and (max-width: 576px) {
 	.title_wrap {
-		padding-bottom: 9.06%;
+		padding-bottom: 36px;
 	}
 
 	.title_faq {
-		font-size: 18px;
-		padding-top: 26.14%;
+		font-size: 24px;
+		padding-top: 48px;
+	}
+
+	.text_faq {
+		font-size: 14px;
 	}
 
 	.search_wrap {
@@ -697,16 +851,16 @@ input[type="text"] {
 	}
 
 	.search_input {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.29;
-		letter-spacing: -0.29;
+		letter-spacing: -0.5px;
 		margin-left: 46px;
 	}
 
 	.search_input::placeholder {
 		font-size: 14px;
 		line-height: 1.29;
-		letter-spacing: -0.29;
+		letter-spacing: -0.5px;
 	}
 
 	.faq_cont {
@@ -733,34 +887,31 @@ input[type="text"] {
 	}
 
 	.faq_box {
-		margin-top: 6.28%;
-		margin-bottom: 8.38%;
+		width: 100%;
+		max-width: none;
 	}
 
 	.question {
-		padding: 5.05% 2.53% 5.05% 2.53%;
+		width: 100%;
+		padding: 20px 24px;
+		margin: 0 auto;
 	}
 
 	.question_tit {
-		font-size: 13px;
-	}
-
-	.question::before {
-		width: 20px;
-		height: 20px;
-		margin-right: 8px;
+		font-size: 16px;
+		padding-right: 0;
 	}
 
 	.answer {
-		padding: 5.68% 8.2%;
+		padding: 24px;
 	}
 
 	.answer_txt {
-		font-size: 12px;
+		font-size: 14px;
 		font-weight: 400;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: 1.63;
-		letter-spacing: -0.26px;
+		letter-spacing: -0.5px;
 	}
 }
