@@ -7,6 +7,7 @@ import NoticeContent2 from "../../screens/HomeNotice/NoticeContent2";
 import NoticeContent3 from "../../screens/HomeNotice/NoticeContent3";
 import NoticeContent4 from "../../screens/HomeNotice/NoticeContent4";
 import NoticeContent5 from "../../screens/HomeNotice/NoticeContent5";
+import NoticeContent6 from "../../screens/HomeNotice/NoticeContent6";
 // import Editor from "../../screens/Notice/MyComponent";
 import HomeFAQ from "../../screens/HomeFAQ";
 
@@ -21,6 +22,7 @@ const Routes = () => {
 			<Route exact path="/home/notice_2" component={NoticeContent3} />
 			<Route exact path="/home/notice_3" component={NoticeContent4} />
 			<Route exact path="/home/notice_4" component={NoticeContent5} />
+			<Route exact path="/home/notice_5" component={NoticeContent6} />
 			{/*<Route path="/notice_write" component={Editor} /> */}
 		</Switch>
 	);

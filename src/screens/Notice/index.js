@@ -16,6 +16,12 @@ function Notice() {
 	const makeData = () => {
 		var list = [
 			{
+				num: "04",
+				title: "[공지] 운전면허증 진위 확인 서비스 중단",
+				date: "2020.12.10",
+				url: "/notice_5"
+			},
+			{
 				num: "03",
 				title: "[공지] 주민등록증 진위 확인 서비스 중단",
 				date: "2020.10.08",
@@ -72,7 +78,7 @@ function Notice() {
 
 	return (
 		<div className="wrapper">
-			<div className="title_wrap">
+			<div className="title_wrap" style={{ borderBottom: "1px solid #eaeaea" }}>
 				<p className="title_notice">공지사항</p>
 			</div>
 
