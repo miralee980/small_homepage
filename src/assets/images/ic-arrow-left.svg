@@ -1,9 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-    <g fill="none" fill-rule="evenodd" transform="translate(.649 .649)">
+    <g fill="none" fill-rule="evenodd">
         <g>
-            <path stroke="#666" d="M11.243 6.746L21.362 16.869 11.251 26.984" transform="matrix(-1 0 0 1 38.919 6.486)"/>
-            <path d="M0 0H33.73V33.73H0z" transform="matrix(-1 0 0 1 38.919 6.486)"/>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path stroke="#666" d="M11.243 6.746L21.362 16.869 11.251 26.984" transform="translate(-373 -504) translate(373 504) translate(5.649 6.649) matrix(-1 0 0 1 33.919 .486)"/>
+                            <path d="M0 0H33.73V33.73H0z" transform="translate(-373 -504) translate(373 504) translate(5.649 6.649) matrix(-1 0 0 1 33.919 .486)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
         </g>
-        <circle cx="23.351" cy="23.351" r="23.351" stroke="#CBCDD4" stroke-width=".5"/>
     </g>
 </svg>
