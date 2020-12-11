@@ -26,8 +26,8 @@ function NoticeContent6({ location }) {
 							<span className="notice_date">{date}</span>
 						</div>
 					</li>
-					<li class="view_content">
-						<p class="view_content_tit">
+					<li className="view_content">
+						<p className="view_content_tit">
 							경찰청의 '교통경찰업무관리시스템(TCS)' 작업과 관련하여 금융기관
 							신분증 진위확인 서비스가 아래와 같이 일시 중단됩니다.
 							<br />

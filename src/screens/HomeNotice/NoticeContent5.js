@@ -27,8 +27,8 @@ function NoticeContent5({ location }) {
 							<span className="notice_date">{date}</span>
 						</div>
 					</li>
-					<li class="view_content">
-						<p class="view_content_tit">
+					<li className="view_content">
+						<p className="view_content_tit">
 							주민등록증 진위 확인 서비스 중단
 							<br />
 							<br />

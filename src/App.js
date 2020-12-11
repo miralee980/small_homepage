@@ -1,12 +1,15 @@
 import React from "react";
 
 import "./styles/reset.css";
+
+import "./styles/font.css";
+import "./styles/fullpage.css";
 import "./styles/moneypot.css";
 import "./styles/faq.css";
-import "./styles/font.css";
+import "./styles/main.css";
+
 import ScrollToTop from "./ScrollToTop";
 import Header from "./components/Header";
-import FooterContainer from "./components/Footer/FooterContainer";
 import Routes from "./components/Routes";
 
 function App() {
@@ -15,7 +18,6 @@ function App() {
 			<ScrollToTop />
 			<Header />
 			<Routes />
-			<FooterContainer />
 		</div>
 	);
 }

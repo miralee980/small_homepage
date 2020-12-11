@@ -28,8 +28,8 @@ function NoticeContent2({ location }) {
 							<span className="notice_date">{date}</span>
 						</div>
 					</li>
-					<li class="view_content">
-						<p class="view_content_tit">
+					<li className="view_content">
+						<p className="view_content_tit">
 							내 손안의 자산관리 비서, 머니포트 오픈 기념 이벤트!
 							<br />
 							<br />

@@ -27,8 +27,8 @@ function NoticeContent4({ location }) {
 							<span className="notice_date">{date}</span>
 						</div>
 					</li>
-					<li class="view_content">
-						<p class="view_content_tit">
+					<li className="view_content">
+						<p className="view_content_tit">
 							KB금융그룹 OpenAPI 플랫폼 DB 업그레이드 작업으로 아래와 같이
 							비대면계좌개설 서비스가 중단됩니다.
 							<br />

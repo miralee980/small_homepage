@@ -3,46 +3,59 @@ import React from "react";
 const Download = () => {
 	return (
 		<div className="section4_inner">
-			<div className="section4_text_area">
-				<div className="app_logo">
-					<img
-						src={require("../../assets/images/logo-mp-lg@3x.png")}
-						alt="app_logo"
-						className="download_logo"
-					/>
-				</div>
-
-				<div className="section4_title">
-					<p className="section4_tit">앱 다운로드</p>
-					<p className="section4_txt">
-						구글 플레이 스토어를 통하여 다운받을 수 있습니다.
-						<br />
-						애플 앱 스토어에서도 곧 만나요!
-					</p>
-				</div>
-
-				<div className="download_btn">
-					<a
-						href="https://play.google.com/store/apps/details?id=quantec.com.moneypot"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
+			<div className="section4_left">
+				<div className="section4_1">
+					<div className="section4_logo">
 						<img
-							src={require("../../assets/images/ic-googleplaystore@3x.png")}
-							alt="img_google"
-							className="img_google"
+							src={require("../../assets/images/logo-mp-lg@3x.png")}
+							alt="img_logo_download"
+							className="img_logo_download"
 						/>
-						<p className="download_txt">Google Play</p>
-					</a>
+					</div>
+					<p className="section4_tit">앱 다운로드</p>
+				</div>
+				<div className="section4_2">
+					<p className="section4_txt">
+						전문가와 함께하는 인공지능 기술 기반 자산관리 서비스! <br />
+						지금 바로 머니포트를 통해 쉽고 편한 자산관리를 경험해보세요!
+					</p>
+					<div className="btn_googleplay">
+						<a href="https://play.google.com/store/apps/details?id=quantec.com.moneypot">
+							<img
+								src={require("../../assets/images/ic-googleplaystore@3x.png")}
+								alt="ic_google"
+								className="ic_google"
+							/>
+							<p className="txt_googleplay">Google Play</p>
+						</a>
+					</div>
 				</div>
 			</div>
 
-			<div className="section4_image_area">
-				<img
-					src={require("../../assets/images/img-download@3x.png")}
-					alt="download_img"
-					className="download_img"
-				/>
+			<div className="section4_right">
+				<div className="section4_3">
+					<img
+						src={require("../../assets/images/img-download@3x.png")}
+						alt="img_download"
+						className="img_download"
+					/>
+				</div>
+				<div className="section4_4">
+					<p className="section4_txt">
+						전문가와 함께하는 인공지능 기술 기반 자산관리 서비스! <br />
+						지금 바로 머니포트를 통해 쉽고 편한 자산관리를 경험해보세요!
+					</p>
+					<div className="btn_googleplay">
+						<a href="https://play.google.com/store/apps/details?id=quantec.com.moneypot">
+							<img
+								src={require("../../assets/images/ic-googleplaystore@3x.png")}
+								alt="ic_google"
+								className="ic_google"
+							/>
+							<p className="txt_googleplay">Google Play</p>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
