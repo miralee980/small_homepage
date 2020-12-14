@@ -78,7 +78,10 @@ function Notice() {
 
 	return (
 		<div className="wrapper">
-			<div className="title_wrap" style={{ borderBottom: "1px solid #eaeaea" }}>
+			<div
+				className="notice_title_wrap"
+				style={{ borderBottom: "1px solid #eaeaea" }}
+			>
 				<p className="title_notice">공지사항</p>
 			</div>
 

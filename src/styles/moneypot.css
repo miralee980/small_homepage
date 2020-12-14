@@ -71,23 +71,34 @@ All Device
 
 /* 공지사항 */
 
+.wrapper {
+	margin-top: 80px;
+}
+
+.notice_title_wrap {
+	width: 100%;
+	background-color: #f9fafb;
+	padding-bottom: 68px;
+}
+
 .title_notice {
-	font-size: 36px;
-	font-weight: 900;
+	font-size: 40px;
+	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
-	letter-spacing: -0.54px;
+	letter-spacing: -1.5px;
 	text-align: center;
-	color: #ffffff;
-	padding-top: 8.35%;
+	color: #3d3f42;
+	padding-top: 60px;
+	margin-top: 80px;
 }
 
 .notice_cont {
-	width: 90.9%;
+	width: 100%;
 	max-width: 900px;
 	margin: 0 auto;
-	padding-top: 11.14%;
+	padding-top: 80px;
 }
 
 .notice_list {
@@ -108,28 +119,31 @@ All Device
 
 .notice_tit_wrap {
 	width: 100%;
-	overflow: hidden;
-	padding: 3.34% 2.23%;
+	padding: 40px 20px;
 	border-bottom: 1px solid #ececec;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .notice_tit_wrap_b {
 	width: 100%;
-	overflow: hidden;
-	padding: 1.78% 2.23%;
-	border-top: 1px solid #3d3f42;
-	border-bottom: 1px solid #3d3f42;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 20px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
 }
 
 .notice_tit_wrap:hover .notice_tit {
-	color: #249feb;
+	color: #4e7cff;
 }
 
 .notice_num {
-	width: 4%;
-	float: left;
+	width: 8%;
 	font-family: "Roboto Condensed", sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
 	font-stretch: condensed;
 	font-style: normal;
@@ -140,11 +154,10 @@ All Device
 }
 
 .notice_tit {
-	width: 80%;
-	float: left;
-	margin-left: 2.33%;
+	width: 70%;
+	margin-left: 20px;
 	font-family: "Noto Sans KR", sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
@@ -154,10 +167,9 @@ All Device
 }
 
 .notice_date {
-	width: 10%;
-	float: right;
+	width: 20%;
 	font-family: "Noto Sans KR", sans-serif;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -168,10 +180,9 @@ All Device
 }
 
 .notice_num_b {
-	width: 4%;
-	float: left;
+	width: 8%;
 	font-family: "Roboto Condensed", sans-serif;
-	font-size: 13px;
+	font-size: 18px;
 	font-weight: bold;
 	font-stretch: condensed;
 	font-style: normal;
@@ -181,11 +192,9 @@ All Device
 	color: #3d3f42;
 }
 .notice_tit_b {
-	width: 80%;
-	float: left;
-	margin-left: 2.33%;
+	width: 70%;
 	font-family: "Noto Sans KR", sans-serif;
-	font-size: 13px;
+	font-size: 18px;
 	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
@@ -196,10 +205,10 @@ All Device
 }
 
 .notice_date_b {
-	width: 10%;
+	width: 20%;
 	float: right;
 	font-family: "Noto Sans KR", sans-serif;
-	font-size: 13px;
+	font-size: 18px;
 	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
@@ -214,13 +223,13 @@ All Device
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	border-bottom: 1px solid #3d3f42;
+	border-bottom: 1px solid #cccccc;
 }
 
 .view_content_tit {
-	padding: 5.34% 7.12%;
+	padding: 48px 64px;
 	font-family: "Noto Sans KR", sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -232,15 +241,15 @@ All Device
 
 .view_btn_wrap {
 	margin: 0 auto;
-	margin-top: 2.92%;
+	margin-top: 48px;
 	text-align: center;
-	padding-bottom: 10.42%;
+	padding-bottom: 80px;
 }
 
 .btn_tit {
 	display: inline-block;
 	font-family: "Noto Sans KR", sans-serif;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
@@ -248,7 +257,7 @@ All Device
 	letter-spacing: normal;
 	text-align: center;
 	color: #3d3f42;
-	padding: 0.84% 2.5%;
+	padding: 16px 48px;
 	margin: 0 auto;
 	border: 1px solid #3d3f42;
 	cursor: pointer;
@@ -267,29 +276,29 @@ All Device
 	/* 공지사항 */
 
 	.title_notice {
-		font-size: 28px;
+		font-size: 40px;
 		font-weight: 900;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: normal;
-		letter-spacing: -0.42px;
+		letter-spacing: -1.5px;
 		text-align: center;
-		color: #ffffff;
-		padding-top: 18.21%;
+		color: #3d3f42;
+		padding-top: 60px;
 	}
 
 	.notice_cont {
-		max-width: none;
-		padding-top: 10.25%;
+		max-width: 770px;
+		padding-top: 80px;
 	}
 
 	/* 공지사항 상세 */
 	.view_btn_wrap {
-		margin-top: 6.25%;
+		margin-top: 60px;
 	}
 
 	.btn_tit {
-		padding: 2.09% 4.69%;
+		padding: 20px 48px;
 	}
 }
 
@@ -298,32 +307,36 @@ All Device
 */
 
 @media screen and (max-width: 768px) {
+	.wrapper {
+		margin-top: 60px;
+	}
+
 	/* 공지사항 */
 	.title_notice {
-		font-size: 24px;
+		font-size: 32px;
 		font-weight: 900;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: normal;
-		letter-spacing: -0.42px;
+		letter-spacing: -1.5px;
 		text-align: center;
-		color: #ffffff;
-		padding-top: 18.28%;
+		color: #3d3f42;
+		padding-top: 60px;
+		margin-top: 60px;
 	}
 
 	.notice_cont {
-		width: 79.1%;
-		padding-top: 16.52%;
+		width: 100%;
+		max-width: 608px;
+		padding-top: 80px;
 	}
 
 	.notice_tit_wrap {
-		padding-top: 4.95%;
-		padding-bottom: 4.95%;
+		padding-top: 30px 20px;
 	}
 
 	.notice_tit_wrap_b {
-		padding-top: 3.3%;
-		padding-bottom: 3.3%;
+		padding-top: 20px 20px;
 	}
 
 	.notice_date_b,
@@ -333,12 +346,22 @@ All Device
 
 	.notice_num_b,
 	.notice_num {
-		width: 5%;
+		width: 8%;
+		font-size: 16px;
 	}
 
 	.notice_tit,
 	.notice_tit_b {
 		width: 92%;
+		font-size: 18px;
+	}
+
+	.btn_tit {
+		font-size: 16px;
+	}
+
+	.view_content_tit {
+		padding: 48px 20px;
 	}
 }
 
@@ -349,13 +372,25 @@ All Device
 @media screen and (max-width: 576px) {
 	/* 공지사항 */
 	.title_notice {
-		font-size: 18px;
-		padding-top: 26.14%;
+		font-size: 24px;
+		padding-top: 48px;
 	}
 
 	.notice_cont {
-		width: 83.3%;
-		padding-top: 12.56%;
+		width: 100%;
+		max-width: none;
+		padding-top: 30px;
+	}
+
+	.notice_tit_wrap_b {
+		display: none;
+	}
+
+	.notice_wrap:first-child {
+	}
+
+	.notice_tit_wrap {
+		padding: 28px 16px;
 	}
 
 	.notice_tit_b,
@@ -364,8 +399,13 @@ All Device
 	.notice_num_b,
 	.notice_date,
 	.notice_date_b {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 1.5;
+	}
+
+	.view_content_tit {
+		font-size: 14px;
+		padding: 24px 20px;
 	}
 
 	.notice_num,
@@ -384,5 +424,14 @@ All Device
 
 	.notice_num_b {
 		font-size: 12px;
+	}
+
+	.btn_tit {
+		font-size: 14px;
+		padding: 14px 36px;
+	}
+
+	.view_btn_wrap {
+		margin-top: 36px;
 	}
 }

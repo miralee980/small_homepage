@@ -3,7 +3,7 @@ import FAQContents from "./FAQContents";
 
 const FAQ = () => {
 	return (
-		<div className="wrapper">
+		<div className="wrapper" style={{ marginTop: 0 }}>
 			<FAQContents FAQContents={null} />
 		</div>
 	);

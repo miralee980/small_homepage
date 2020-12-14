@@ -7,8 +7,10 @@ function NoticeContent5({ location }) {
 	const { num, date } = queryObj;
 	return (
 		<div className="wrapper">
-			<div className="title_wrap">
-				<p className="title_notice">공지사항</p>
+			<div className="notice_title_wrap">
+				<p className="title_notice" style={{ marginTop: 0 }}>
+					공지사항
+				</p>
 			</div>
 
 			<div className="notice_cont">
@@ -17,8 +19,8 @@ function NoticeContent5({ location }) {
 						<div
 							className="notice_tit_wrap"
 							style={{
-								borderTop: "1px solid #343c55",
-								borderBottom: "1px solid #343c55"
+								borderTop: "1px solid #ccc",
+								borderBottom: "1px solid #ccc"
 							}}
 						>
 							<span className="notice_num">{num}</span>

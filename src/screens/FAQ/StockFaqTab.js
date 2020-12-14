@@ -65,7 +65,7 @@ const StockFaqTab = ({ selFaqList, setFaqList }) => {
 				value={selFaqList}
 				onChange={(event) => setFaqList(event.target.value)}
 			>
-				<option value="all">자주 묻는 질문</option>
+				<option value="all">전체</option>
 				<option value="preparation">투자 전 준비사항</option>
 				<option value="investment">투자 방법</option>
 				<option value="divident">배당금 입금</option>

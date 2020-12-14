@@ -26,8 +26,7 @@ const FAQContents = ({ searchText }) => {
 			<p class="answer_txt">- 머니포트가 다양한 ETF를 선별하여 제공하며, 독자적 위험관리 기술을 통해 꾸준히 관리해 드립니다.</p><br />
 			<p class="answer_txt">3. 이달의 테마 상품 (미국주식)</p>
 			<p class="answer_txt">- 테마별로 인기 있는 미국 주식을 최근 트렌드에 따라 안내하는 상품입니다. </p>
-			<p class="answe
-			r_txt">- 각 테마에 해당하는 종목을 선택하면 적정 투자 비중 추천을 받으실 수 있습니다.</p>
+			<p class="answer_txt">- 각 테마에 해당하는 종목을 선택하면 적정 투자 비중 추천을 받으실 수 있습니다.</p>
 			<p class="answer_txt">- 다만 현재 실 주문 기능은 아직 지원하지 않고 있으며, 추후 지원 예정입니다.</p>`
 		},
 		{

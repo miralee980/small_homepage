@@ -7,9 +7,11 @@ function NoticeContent1({ location }) {
 	const queryObj = queryString.parse(search);
 	const { num, date } = queryObj;
 	return (
-		<div className="wrapper">
-			<div className="title_wrap">
-				<p className="title_notice">공지사항</p>
+		<div className="wrapper" style={{ marginTop: 0 }}>
+			<div className="notice_title_wrap">
+				<p className="title_notice" style={{ marginTop: 0 }}>
+					공지사항
+				</p>
 			</div>
 
 			<div className="notice_cont">
@@ -18,8 +20,8 @@ function NoticeContent1({ location }) {
 						<div
 							className="notice_tit_wrap"
 							style={{
-								borderTop: "1px solid #343c55",
-								borderBottom: "1px solid #343c55"
+								borderTop: "1px solid #ccc",
+								borderBottom: "1px solid #ccc"
 							}}
 						>
 							<span className="notice_num">{num}</span>

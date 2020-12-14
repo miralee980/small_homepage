@@ -2,7 +2,7 @@ import React from "react";
 
 const InvestmentTab = ({ selFaqList, setFaqList }) => {
 	return (
-		<div className="faq_list">
+		<div className="faq_list" style={{ paddingTop: "60px" }}>
 			<ul className="stocks_list">
 				<li>
 					<span
@@ -59,7 +59,7 @@ const InvestmentTab = ({ selFaqList, setFaqList }) => {
 				value={selFaqList}
 				onChange={(event) => setFaqList(event.target.value)}
 			>
-				<option value="all">자주 묻는 질문</option>
+				<option value="all">전체</option>
 				<option value="investment">투자 자문 상품</option>
 				<option value="account">계좌 개설</option>
 				<option value="order">상품 주문</option>
