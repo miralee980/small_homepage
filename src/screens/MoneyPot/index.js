@@ -16,21 +16,9 @@ class MoneyPot extends React.Component {
 					licenseKey={FULLPAGE_LICENSE_KEY}
 					slidesNavigation={true}
 					scrollHorizontally={true}
-					paddingTop={[
-						"80px",
-						"80px",
-						"80px",
-						"80px",
-						"0"
-					]}
+					paddingTop={["80px", "80px", "80px", "80px", "0"]}
 					navigationPosition={"left"}
-					sectionsColor={[
-						"#000",
-						"#000",
-						"#fff",
-						"#000",
-						"#000"
-					]}
+					sectionsColor={["#161922", "#000", "#fff", "#000", "#000"]}
 					navigationTooltips={[
 						"머니포트",
 						"서비스 소개",
