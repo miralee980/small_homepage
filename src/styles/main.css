@@ -458,6 +458,7 @@ body {
 
 .footer_info {
 	width: 100%;
+	margin-bottom: 3%;
 }
 
 .footer_name {
@@ -549,6 +550,62 @@ body {
 
 .footer_sns_item:first-child {
 	padding-left: 0;
+}
+
+.footer_guidance {
+	border-top: 1px solid #808080;
+	padding-top: 2%;
+	max-width: 900px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.btn_guidance {
+	width: 25%;
+	border: 1px solid #808080;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.btn_guidance:hover, .btn_guidance:active {
+	background-color: rgba(255,255,255,0.1);
+}
+
+.btn_guidance a:hover, .btn_guidance a:active {
+	color: #bbbbbb;
+	font-weight: normal;
+}
+
+.btn_guidance a {
+	width: 100%;
+	padding: 20px 16px;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #808080;
+}
+
+.text_guidance {
+	width: 90%;
+	margin-left: 2%;
+	display: inline-block;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #808080;
 }
 
 @media screen and (max-width: 1199px) {
@@ -698,6 +755,44 @@ Tablet Device 대응
 	.footer_inner {
 		max-width: 719px;
 	}
+
+	.footer_guidance {
+		max-width: 719px;
+	}
+
+	.footer_info {
+		margin-bottom: 4%;
+	}
+
+
+	.footer_guidance {
+
+		padding-top: 3%;
+	}
+
+	.btn_guidance {
+		width: 32%;
+	}
+
+	.btn_guidance a {
+		padding: 24px 18px;
+		font-size: 16px;
+	}
+
+	.text_guidance {
+		width: 90%;
+		margin-left: 2%;
+		display: inline-block;
+		font-family: "Noto Sans KR", sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #808080;
+	}
 }
 
 /* 
@@ -794,6 +889,54 @@ Tablet Device 대응
 	.footer_inner {
 		max-width: 576px;
 		margin: 0 auto;
+	}
+
+	.footer_info {
+		margin-bottom: 7%;
+	}
+
+	.footer_guidance {
+		max-width: 576px;
+		flex-flow: column nowrap;
+		padding-top: 5%;
+	}
+
+
+	.btn_guidance {
+		width: 100%;
+		border: 1px solid #808080;
+		border-radius: 8px;
+		text-align: center;
+	}
+
+	.btn_guidance a {
+		width: 100%;
+		padding: 20px 16px;
+		font-family: "Noto Sans KR", sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #808080;
+	}
+
+	.text_guidance {
+		padding-top: 3%;
+		width: 100%;
+		margin-left: 0;
+		display: inline-block;
+		font-family: "Noto Sans KR", sans-serif;
+		font-size: 13px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #808080;
 	}
 }
 
@@ -1013,4 +1156,22 @@ Tablet Device 대응
 		margin: 0 auto;
 		margin-top: 20px;
 	}
+
+	.footer_info {
+		margin-bottom: 0;
+	}
+
+	.footer_sns {
+		margin-bottom: 10%;
+	}
+
+	.footer_guidance {
+		max-width: 320px;
+		padding-top: 6%;
+	}
+
+	.text_guidance {
+		padding-top: 5%;
+	}
+
 }

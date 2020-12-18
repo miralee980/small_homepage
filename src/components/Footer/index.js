@@ -12,7 +12,7 @@ const Footer = (/*{ companyInfo }*/) => {
 						</span>
 						<span className="footer_detail_txt">대표 최용석</span> <br />
 						<span className="footer_detail_txt">
-							(07320) 서울특별시 영등포구 여의대로 14, 콴텍투자자문(주) 14층
+							(07320) 서울특별시 영등포구 여의대로 14, 14층 콴텍투자자문(주)
 						</span>{" "}
 						<br />
 						<span className="footer_detail_txt">
@@ -68,6 +68,17 @@ const Footer = (/*{ companyInfo }*/) => {
 							/>
 						</a>
 					</div>
+				</div>
+			
+			</div>
+			<div className="footer_guidance">
+				<div className="btn_guidance">
+					<a href="http://fine.fss.or.kr/main/fin_comp/fincomp_inqui/comsearch01list.jsp">
+						제도권 금융회사 조회
+					</a>
+				</div>
+				<div className="text_guidance">
+						주식회사 콴텍투자자문은 ‘자본시장과 금융투자에 관한 법률 제 12조’에 따라 자본금, 전문인력, 이해상충방지 요건 등을 갖추고 금융감독위원회에 등록된 적격 투자자문사입니다. 따라서 금융투자상품의 가치 또는 투자판단에 대한 자문에 응하고 투자종목에 대한 종류, 종목, 취득, 처분, 수량과 시기 등을 고객에게 자문할 수 있는 법적인 자격을 가지며 제도권 금융기관으로서 금융감독원의 감독과 검사를 받고 있습니다.
 				</div>
 			</div>
 		</footer>
