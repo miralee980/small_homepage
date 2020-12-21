@@ -69,8 +69,20 @@ const Footer = (/*{ companyInfo }*/) => {
 						</a>
 					</div>
 				</div>
-			
 			</div>
+
+			<div className="footer_judge">
+				<p className="tit_judge">콴텍투자자문㈜ 준법감시인 심사필 제2020-006호(2020.12.18)</p>
+				<div className="wrap_judge">
+					<p className="txt_judge">[투자 유의사항]</p>
+					<ol className="ol_judge">
+						<li className="li_judge">- 당사는 금융투자상품에 관하여 충분히 설명할 의무가 있으며, 가입자는 투자에 앞서 상품 내용에 관하여 충분히 확인 후 투자 결정을 내리시기 바랍니다.</li>
+						<li className="li_judge">- 금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+						<li className="li_judge">- 운용결과에 따라 투자원금의 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</li>
+					</ol>
+				</div>
+			</div>
+
 			<div className="footer_guidance">
 				<div className="btn_guidance">
 					<a href="http://fine.fss.or.kr/main/fin_comp/fincomp_inqui/comsearch01list.jsp">
