@@ -552,8 +552,47 @@ body {
 	padding-left: 0;
 }
 
+.footer_judge {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+
+}
+
+.tit_judge {
+	padding-top: 4%;
+	border-top: 1px solid #505050;
+	width: 100%;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.5;
+	text-align: left;
+	color: #bbb;
+}
+
+.wrap_judge {
+	margin: 0 0 4%;
+}
+
+.li_judge {
+	width: 100%;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.8;
+	letter-spacing: -0.5;
+	text-align: left;
+	color: #808080;
+}
+
 .footer_guidance {
-	border-top: 1px solid #808080;
+	border-top: 1px solid #505050;
 	padding-top: 2%;
 	max-width: 900px;
 	margin: 0 auto;
@@ -760,6 +799,18 @@ Tablet Device 대응
 		max-width: 719px;
 	}
 
+	.footer_judge {
+		max-width: 719px;
+	}
+
+	.tit_judge {
+		font-size: 14px;
+	}
+
+	.li_judge {
+		font-size: 12px;
+	}
+
 	.footer_info {
 		margin-bottom: 4%;
 	}
@@ -899,6 +950,10 @@ Tablet Device 대응
 		max-width: 576px;
 		flex-flow: column nowrap;
 		padding-top: 5%;
+	}
+
+	.footer_judge {
+		max-width: 576px;
 	}
 
 
@@ -1163,6 +1218,10 @@ Tablet Device 대응
 
 	.footer_sns {
 		margin-bottom: 10%;
+	}
+
+	.footer_judge {
+		max-width: 320px;
 	}
 
 	.footer_guidance {
