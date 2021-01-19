@@ -9,16 +9,26 @@ const QuestionItem = ({ question }) => {
 	const createMarkup = () => {
 		if (question) {
 			return {
-				__html: `${question.answer}`
+				__html: `${question.body}`
 			};
 		}
 	};
 	return (
 		<li className="faq_wrap">
 			<p className="question" onClick={() => setOpen(!isOpen)}>
-				<p className="question_section">{question.subject}</p>
+				<p className="question_section">
+					{question.section_id === 900000625006
+						? "머니포트 앱 사용"
+						: question.section_id === 900001620223
+						? "상품 주문"
+						: question.section_id === 900000624986
+						? "계좌 개설"
+						: question.section_id === 900000624966
+						? "투자 자문 상품"
+						: ""}
+				</p>
 				<p className="question_tit active">
-					{question ? question.questionTitle : null}
+					{question ? question.title : null}
 				</p>
 				{isOpen ? (
 					<img
@@ -36,7 +46,10 @@ const QuestionItem = ({ question }) => {
 			</p>
 			{isOpen ? (
 				<div className="answer">
-					<div dangerouslySetInnerHTML={createMarkup()}></div>
+					<div
+						dangerouslySetInnerHTML={createMarkup()}
+						className="answer_txt"
+					></div>
 					{/* {question ? question.answer:null} */}
 				</div>
 			) : null}

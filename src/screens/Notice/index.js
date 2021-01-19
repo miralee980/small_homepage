@@ -1,118 +1,37 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import PageNum from "../../components/PageNum";
-const DEFINE_LIST_NUM = 10;
+import NoticeList from "./NoticeList";
 
-function Notice() {
+function Notice({ where }) {
 	const [data, setData] = useState([]);
-	const dataList = [];
 	const [totalNum, setTotalNum] = useState(0);
-	const [selNum, setSelNum] = useState(1);
-
+	console.log(where);
 	useEffect(() => {
-		makeData();
+		var myHeaders = new Headers();
+		myHeaders.append(
+			"Authorization",
+			"Basic aW5mb0BxdWFudGVjLmNvLmtyOiFxdWFudDAzMzA="
+		);
+
+		var requestOptions = {
+			method: "GET",
+			headers: myHeaders,
+			redirect: "follow"
+		};
+
+		fetch(
+			"https://quantec.zendesk.com/api/v2/help_center/ko/sections/900000427983/articles.json",
+			requestOptions
+		)
+			.then((response) => response.json())
+			.then((result) => {
+				console.log(result);
+				setData(result.articles);
+				setTotalNum(result.count);
+			})
+			.catch((error) => console.log("error", error));
 	}, []);
 
-	const makeData = () => {
-		var list = [
-			{
-				num: "04",
-				title: "[공지] 운전면허증 진위 확인 서비스 중단",
-				date: "2020.12.10",
-				url: "/notice_5"
-			},
-			{
-				num: "03",
-				title: "[공지] 주민등록증 진위 확인 서비스 중단",
-				date: "2020.10.08",
-				url: "/notice_4"
-			},
-			{
-				num: "02",
-				title: "[공지] KB금융그룹 OpenAPI 서비스 중단",
-				date: "2020.10.06",
-				url: "/notice_3"
-			},
-			{
-				num: "01",
-				title: "[공지] 주민등록증 진위 확인 서비스 중단",
-				date: "2020.09.25",
-				url: "/notice_2"
-			}
-			// {
-			// 	num: "02",
-			// 	title: "[이벤트] 내 손안의 자산관리 비서, 머니포트 오픈 기념 이벤트!",
-			// 	date: "2020.08.31",
-			// 	url: "/notice_1"
-			// },
-			// {
-			// 	num: "01",
-			// 	title: "[공지] 내 손 안의 자산관리 비서, 머니포트 앱 오픈 안내",
-			// 	date: "2020.08.31",
-			// 	url: "/notice_0"
-			// }
-		];
-
-		setData(list);
-		setTotalNum(list.length);
-	};
-
-	const makeList = () => {
-		var endNum =
-			selNum * DEFINE_LIST_NUM > totalNum ? totalNum : selNum * DEFINE_LIST_NUM;
-		for (var i = (selNum - 1) * DEFINE_LIST_NUM; i < endNum; i++) {
-			dataList.push(
-				<li className="notice_wrap" key={i}>
-					<Link to={`${data[i].url}?num=${data[i].num}&date=${data[i].date}`}>
-						<div className="notice_tit_wrap on">
-							<span className="notice_num">{data[i].num}</span>
-							<p className="notice_tit">{data[i].title}</p>
-							<span className="notice_date">{data[i].date}</span>
-						</div>
-					</Link>
-				</li>
-			);
-		}
-		return <>{dataList}</>;
-	};
-
-	return (
-		<div className="wrapper" style={{ marginTop: 0 }}>
-			<div
-				className="notice_title_wrap"
-				style={{ borderBottom: "1px solid #eaeaea" }}
-			>
-				<p className="title_notice" style={{ marginTop: "0" }}>
-					공지사항
-				</p>
-			</div>
-
-			<div className="notice_cont">
-				<ul className="notice_list">
-					<li className="notice_wrap">
-						<div className="notice_tit_wrap_b">
-							<span className="notice_num_b">번호</span>
-							<p className="notice_tit_b">제목</p>
-							<span className="notice_date_b">등록일</span>
-						</div>
-					</li>
-
-					{data.length > 0 ? makeList() : null}
-				</ul>
-				<PageNum
-					totalNum={totalNum}
-					selNum={selNum}
-					listNum={DEFINE_LIST_NUM}
-					setSelNum={setSelNum}
-				/>
-			</div>
-			{/* <div className="view_btn_wrap">
-				<Link to={"/notice_write"} className="btn_tit">
-					글쓰기
-				</Link>
-			</div> */}
-		</div>
-	);
+	return <NoticeList data={data} totalNum={totalNum} where={where} />;
 }
 
 export default Notice;

@@ -222,7 +222,16 @@ All Device
 .view_content {
 	width: 100%;
 	margin: 0 auto;
+	padding: 48px 64px;
 	position: relative;
+	font-family: "Noto Sans KR", sans-serif;
+	line-height: 1.6;
+	font-weight: 400;
+	font-stretch: normal;
+	letter-spacing: normal;
+	font-size: 18px;
+	font-style: normal;
+	color: #3d3f42;
 	border-bottom: 1px solid #cccccc;
 }
 

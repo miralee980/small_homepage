@@ -7,6 +7,7 @@ import "./styles/fullpage.css";
 import "./styles/moneypot.css";
 import "./styles/faq.css";
 import "./styles/main.css";
+import "./styles/zendesk-wysiwyg-styles.css";
 
 import ScrollToTop from "./ScrollToTop";
 import Header from "./components/Header";

@@ -1,0 +1,619 @@
+.wysiwyg-color-black {
+	color: #000;
+}
+.wysiwyg-color-black70 {
+	color: #4d4d4d;
+}
+.wysiwyg-color-black60 {
+	color: #666666;
+}
+.wysiwyg-color-black50 {
+	color: gray;
+}
+.wysiwyg-color-black40 {
+	color: #999999;
+}
+.wysiwyg-color-black30 {
+	color: #b3b3b3;
+}
+.wysiwyg-color-black20 {
+	color: #cccccc;
+}
+.wysiwyg-color-black10 {
+	color: #e6e6e6;
+}
+.wysiwyg-color-red {
+	color: #f00;
+}
+.wysiwyg-color-orange {
+	color: #f90;
+}
+.wysiwyg-color-yellow {
+	color: #ff0;
+}
+.wysiwyg-color-green {
+	color: #0f0;
+}
+.wysiwyg-color-cyan {
+	color: #0ff;
+}
+.wysiwyg-color-blue {
+	color: #00f;
+}
+.wysiwyg-color-purple {
+	color: #90f;
+}
+.wysiwyg-color-pink {
+	color: #f0f;
+}
+.wysiwyg-color-red90 {
+	color: #ff3333;
+}
+.wysiwyg-color-red80 {
+	color: #ff6666;
+}
+.wysiwyg-color-red70 {
+	color: #ff9999;
+}
+.wysiwyg-color-red110 {
+	color: #cc0000;
+}
+.wysiwyg-color-red120 {
+	color: #990000;
+}
+.wysiwyg-color-red130 {
+	color: #660000;
+}
+.wysiwyg-color-orange90 {
+	color: #ffad33;
+}
+.wysiwyg-color-orange80 {
+	color: #ffc266;
+}
+.wysiwyg-color-orange70 {
+	color: #ffd699;
+}
+.wysiwyg-color-orange110 {
+	color: #cc7a00;
+}
+.wysiwyg-color-orange120 {
+	color: #995c00;
+}
+.wysiwyg-color-orange130 {
+	color: #663d00;
+}
+.wysiwyg-color-yellow90 {
+	color: #ffff33;
+}
+.wysiwyg-color-yellow80 {
+	color: #ffff66;
+}
+.wysiwyg-color-yellow70 {
+	color: #ffff99;
+}
+.wysiwyg-color-yellow110 {
+	color: #cccc00;
+}
+.wysiwyg-color-yellow120 {
+	color: #999900;
+}
+.wysiwyg-color-yellow130 {
+	color: #666600;
+}
+.wysiwyg-color-green90 {
+	color: #33ff33;
+}
+.wysiwyg-color-green80 {
+	color: #66ff66;
+}
+.wysiwyg-color-green70 {
+	color: #99ff99;
+}
+.wysiwyg-color-green110 {
+	color: #00cc00;
+}
+.wysiwyg-color-green120 {
+	color: #009900;
+}
+.wysiwyg-color-green130 {
+	color: #006600;
+}
+.wysiwyg-color-cyan90 {
+	color: #33ffff;
+}
+.wysiwyg-color-cyan80 {
+	color: #66ffff;
+}
+.wysiwyg-color-cyan70 {
+	color: #99ffff;
+}
+.wysiwyg-color-cyan110 {
+	color: #00cccc;
+}
+.wysiwyg-color-cyan120 {
+	color: #009999;
+}
+.wysiwyg-color-cyan130 {
+	color: #006666;
+}
+.wysiwyg-color-blue90 {
+	color: #3333ff;
+}
+.wysiwyg-color-blue80 {
+	color: #6666ff;
+}
+.wysiwyg-color-blue70 {
+	color: #9999ff;
+}
+.wysiwyg-color-blue110 {
+	color: #0000cc;
+}
+.wysiwyg-color-blue120 {
+	color: #000099;
+}
+.wysiwyg-color-blue130 {
+	color: #000066;
+}
+.wysiwyg-color-purple90 {
+	color: #ad33ff;
+}
+.wysiwyg-color-purple80 {
+	color: #c266ff;
+}
+.wysiwyg-color-purple70 {
+	color: #d699ff;
+}
+.wysiwyg-color-purple110 {
+	color: #7a00cc;
+}
+.wysiwyg-color-purple120 {
+	color: #5c0099;
+}
+.wysiwyg-color-purple130 {
+	color: #3d0066;
+}
+.wysiwyg-color-pink90 {
+	color: #ff33ff;
+}
+.wysiwyg-color-pink80 {
+	color: #ff66ff;
+}
+.wysiwyg-color-pink70 {
+	color: #ff99ff;
+}
+.wysiwyg-color-pink110 {
+	color: #cc00cc;
+}
+.wysiwyg-color-pink120 {
+	color: #990099;
+}
+.wysiwyg-color-pink130 {
+	color: #660066;
+}
+.wysiwyg-font-size-x-large {
+	font-size: x-large;
+	font-weight: 800;
+}
+.wysiwyg-font-size-large {
+	font-size: large;
+	font-weight: 600;
+}
+.wysiwyg-font-size-medium {
+	font-size: small;
+}
+.wysiwyg-font-size-small {
+	font-size: x-small;
+}
+.wysiwyg-underline {
+	text-decoration: underline;
+}
+.wysiwyg-text-align-right {
+	text-align: right;
+}
+.wysiwyg-text-align-center {
+	text-align: center;
+}
+.wysiwyg-text-align-left {
+	text-align: left;
+}
+.wysiwyg-text-align-justify {
+	text-align: justify;
+}
+.wysiwyg-indent1 {
+	padding-left: 10px;
+}
+[dir="rtl"] .wysiwyg-indent1 {
+	padding-left: auto;
+	padding-right: 10px;
+}
+.wysiwyg-indent2 {
+	padding-left: 20px;
+}
+[dir="rtl"] .wysiwyg-indent2 {
+	padding-left: auto;
+	padding-right: 20px;
+}
+.wysiwyg-indent3 {
+	padding-left: 30px;
+}
+[dir="rtl"] .wysiwyg-indent3 {
+	padding-left: auto;
+	padding-right: 30px;
+}
+.wysiwyg-indent4 {
+	padding-left: 40px;
+}
+[dir="rtl"] .wysiwyg-indent4 {
+	padding-left: auto;
+	padding-right: 40px;
+}
+.wysiwyg-indent5 {
+	padding-left: 50px;
+}
+[dir="rtl"] .wysiwyg-indent5 {
+	padding-left: auto;
+	padding-right: 50px;
+}
+.wysiwyg-indent6 {
+	padding-left: 60px;
+}
+[dir="rtl"] .wysiwyg-indent6 {
+	padding-left: auto;
+	padding-right: 60px;
+}
+.wysiwyg-indent7 {
+	padding-left: 70px;
+}
+[dir="rtl"] .wysiwyg-indent7 {
+	padding-left: auto;
+	padding-right: 70px;
+}
+.wysiwyg-indent8 {
+	padding-left: 80px;
+}
+[dir="rtl"] .wysiwyg-indent8 {
+	padding-left: auto;
+	padding-right: 80px;
+}
+.wysiwyg-indent9 {
+	padding-left: 90px;
+}
+[dir="rtl"] .wysiwyg-indent9 {
+	padding-left: auto;
+	padding-right: 90px;
+}
+.wysiwyg-indent10 {
+	padding-left: 100px;
+}
+[dir="rtl"] .wysiwyg-indent10 {
+	padding-left: auto;
+	padding-right: 100px;
+}
+.wysiwyg-indent11 {
+	padding-left: 110px;
+}
+[dir="rtl"] .wysiwyg-indent11 {
+	padding-left: auto;
+	padding-right: 110px;
+}
+.wysiwyg-indent12 {
+	padding-left: 120px;
+}
+[dir="rtl"] .wysiwyg-indent12 {
+	padding-left: auto;
+	padding-right: 120px;
+}
+.wysiwyg-indent13 {
+	padding-left: 130px;
+}
+[dir="rtl"] .wysiwyg-indent13 {
+	padding-left: auto;
+	padding-right: 130px;
+}
+.wysiwyg-indent14 {
+	padding-left: 140px;
+}
+[dir="rtl"] .wysiwyg-indent14 {
+	padding-left: auto;
+	padding-right: 140px;
+}
+.wysiwyg-indent15 {
+	padding-left: 150px;
+}
+[dir="rtl"] .wysiwyg-indent15 {
+	padding-left: auto;
+	padding-right: 150px;
+}
+.wysiwyg-indent16 {
+	padding-left: 160px;
+}
+[dir="rtl"] .wysiwyg-indent16 {
+	padding-left: auto;
+	padding-right: 160px;
+}
+.wysiwyg-indent17 {
+	padding-left: 170px;
+}
+[dir="rtl"] .wysiwyg-indent17 {
+	padding-left: auto;
+	padding-right: 170px;
+}
+.wysiwyg-indent18 {
+	padding-left: 180px;
+}
+[dir="rtl"] .wysiwyg-indent18 {
+	padding-left: auto;
+	padding-right: 180px;
+}
+.wysiwyg-indent19 {
+	padding-left: 190px;
+}
+[dir="rtl"] .wysiwyg-indent19 {
+	padding-left: auto;
+	padding-right: 190px;
+}
+.wysiwyg-indent20 {
+	padding-left: 200px;
+}
+[dir="rtl"] .wysiwyg-indent20 {
+	padding-left: auto;
+	padding-right: 200px;
+}
+
+
+
+/* 
+=============================================================
+All Device 
+모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨. 
+1920~ 1199px
+=============================================================
+*/
+
+/* Notice - index.html */
+
+.notice_tit_wrap_b {
+	padding: 24px 20px;
+}
+
+.notice_tit_b {
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+.notice_date_b {
+	font-size: 20px;
+	padding-right: 40px;
+}
+
+.notice_tit_wrap {
+	padding: 40px;
+}
+
+.notice_tit {
+	margin: 0 ;
+	font-size: 18px;
+}
+
+.notice_date {
+	font-size: 16px;
+}
+
+
+
+/* NoticeContent */
+.view_content {
+	padding: 48px 40px;
+	word-break: keep-all;
+}
+
+.view_content span {
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+.btn_tit {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+
+
+/* FAQ */
+.question_section {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.question_tit {
+	font-size: 22px;
+	word-break: keep-all;
+}
+
+.answer {
+	padding: 40px 50px;
+	border-top: 0;
+}
+
+.answer_txt {
+	font-size: 20px;
+	word-break: keep-all;
+	line-height: 1.4;
+	margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+/* Tablet Device 대응
+사용자 해상도가 991px 이하일 때 이 코드가 실행됨. 미디어쿼리를 지원 
+*/
+
+
+@media screen and (max-width: 991px) {
+
+	/* Notice */
+	.notice_cont {
+		max-width: 768px;
+
+	}
+
+	.notice_tit_b {
+		font-size: 18px;
+	}
+
+	.notice_date_b {
+		font-size: 18px;
+		padding-right: 30px
+	}
+
+	.notice_tit {
+		font-size: 18px;
+		margin-left: 20px;
+	}
+
+	/* NoticeCont */
+	.view_content {
+		padding: 48px 60px;
+	}
+
+	.view_content span {
+		font-size: 16px;
+	}
+
+
+
+
+
+	/* Notice */
+	.faq_box {
+		max-width: 768px;
+	}
+	
+	.question {
+		padding: 48px;
+	}
+
+	.answer {
+		padding: 42px 48px;
+	}
+
+	.answer_txt {
+		line-height: 1.5;
+		margin-bottom: 16px;
+
+	}
+
+	
+	.ic_arrow_down, .ic_arrow_up {
+		margin-right: 2%;
+	}
+
+
+
+}
+
+
+
+
+
+
+/* Lagre Device 대응
+사용자 해상도가 768px 이하일 때 이 코드가 실행됨. 미디어쿼리를 지원 
+*/
+
+@media screen and (max-width: 768px) {
+	.notice_cont {
+		max-width: none;
+	}
+
+	.notice_tit_b {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.notice_tit_wrap {
+		padding: 40px 60px;
+	}
+
+	.notice_tit {
+		width: 100%;
+		margin-left: 0;
+	}
+
+
+	/* FAQ */
+	.faq_box {
+		max-width: none;
+		width: 100%;
+	}
+
+	.question {
+		padding: 42px 10%;
+	}
+
+	.question_section {
+		font-size: 16px;
+	}
+
+	.question_tit {
+		font-size: 20px;
+	}
+
+	.answer {
+		padding: 42px 10%;
+	}
+
+	.answer_txt {
+		font-size: 18px;
+	}
+
+}
+
+
+
+
+/* Medium Device 대응
+사용자 해상도가 576px 이하일 때 이 코드가 실행됨. 미디어쿼리를 지원 
+*/
+
+@media screen and (max-width: 576px) {
+
+	.notice_tit_wrap {
+		padding: 40px 10%;
+	}
+
+	.notice_tit_b {
+		font-size: 16px;
+	}
+
+	.view_content {
+		padding: 48px 10%;
+	}
+
+
+	/* FAQ */
+
+	.question {
+		padding: 28px 10%;
+	}
+
+	.question_section {
+		font-size: 14px;
+	}
+
+	.question_tit {
+		font-size: 18px;
+	}
+
+	.answer {
+		padding: 24px 10%;
+	}
+
+	.answer_txt {
+		font-size: 16px;
+	}
+}
