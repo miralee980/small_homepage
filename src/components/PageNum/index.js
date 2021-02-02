@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const PageNum = (props) => {
 	const { totalNum, selNum, listNum, setSelNum } = props;
 	const pageNum =
 		parseInt(totalNum / listNum) + (totalNum % listNum > 0 ? 1 : 0);
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [selNum]);
 
 	const onPageNumClickHandler = (index) => {
 		setSelNum(Number(index));
