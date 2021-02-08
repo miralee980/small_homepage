@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+// import { observer } from "mobx-react";
+// import { RootContext } from "../../store/RootStore";
 import PageNum from "../../components/PageNum";
 import moment from "moment";
 const dateFormat = "YYYY-MM-DD";
 const DEFINE_LIST_NUM = 10;
 
-function NoticeList({ data, totalNum, where }) {
-	// const [data, setData] = useState([]);
+const NoticeList = ({ where, data, totalNum }) => {
 	const dataList = [];
-	// const [totalNum, setTotalNum] = useState(0);
 	const [selNum, setSelNum] = useState(1);
 
 	const makeList = () => {
@@ -22,7 +22,9 @@ function NoticeList({ data, totalNum, where }) {
 							pathname:
 								where === "home" ? "/home/noticeContent" : "/noticeContent",
 							state: {
-								content: data[i]
+								body: data[i].body,
+								title: data[i].title,
+								created_at: data[i].created_at
 							}
 						}}
 					>
@@ -57,7 +59,7 @@ function NoticeList({ data, totalNum, where }) {
 						</div>
 					</li>
 
-					{data.length > 0 ? makeList() : null}
+					{makeList()}
 				</ul>
 				<PageNum
 					totalNum={totalNum}
@@ -68,6 +70,6 @@ function NoticeList({ data, totalNum, where }) {
 			</div>
 		</div>
 	);
-}
+};
 
 export default NoticeList;

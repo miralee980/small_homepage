@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect /*, useContext */ } from "react";
+// import { observer } from "mobx-react";
+// import { RootContext } from "../../store/RootStore";
 import NoticeList from "./NoticeList";
 
-function Notice({ where }) {
+const Notice = ({ where }) => {
 	const [data, setData] = useState([]);
 	const [totalNum, setTotalNum] = useState(0);
-	console.log(where);
+	// const root = useContext(RootContext);
+	// const { notice } = root;
+	//console.log(where);
 	useEffect(() => {
 		var myHeaders = new Headers();
 		myHeaders.append(
@@ -32,6 +36,6 @@ function Notice({ where }) {
 	}, []);
 
 	return <NoticeList data={data} totalNum={totalNum} where={where} />;
-}
+};
 
 export default Notice;

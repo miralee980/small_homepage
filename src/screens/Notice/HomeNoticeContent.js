@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import NoticeContent from "./NoticeContent";
-import moment from "moment";
-const dateFormat = "YYYY-MM-DD";
 
 function HomeNoticeContent({ location }) {
-	const { state } = location;
-	const data = state.content;
-
 	return (
 		<div className="wrapper">
 			<NoticeContent location={location} />

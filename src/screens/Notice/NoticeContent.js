@@ -1,16 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import moment from "moment";
 const dateFormat = "YYYY-MM-DD";
 
 function NoticeContent({ location }) {
 	const { state } = location;
-	const data = state.content;
+	const { body, title, created_at } = state;
 
 	const createMarkup = () => {
-		if (data) {
+		if (body) {
 			return {
-				__html: `${data.body}`
+				__html: `${body}`
 			};
 		}
 	};
@@ -32,9 +31,9 @@ function NoticeContent({ location }) {
 								borderBottom: "1px solid #ccc"
 							}}
 						>
-							<p className="notice_tit">{data ? data.title : ""}</p>
+							<p className="notice_tit">{title ? title : ""}</p>
 							<span className="notice_date">
-								{data ? moment(data.created_at).format(dateFormat) : ""}
+								{created_at ? moment(created_at).format(dateFormat) : ""}
 							</span>
 						</div>
 					</li>
