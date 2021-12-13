@@ -1,6 +1,5 @@
-import React, { useState, useEffect /*, useContext*/ } from "react";
-// import { observer } from "mobx-react";
-// import { RootContext } from "../../store/RootStore";
+import React, { useState, useEffect } from "react";
+
 import InvestmentTab from "./InvestmentTab";
 import QuestionList from "./QuestionList";
 import PageNum from "../../components/PageNum";
@@ -12,8 +11,7 @@ const FAQContents = ({ searchText }) => {
 	const [selNum, setSelNum] = useState(1);
 	const [selFaqList, setFaqList] = useState("all");
 	const [data, setData] = useState([]);
-	// const root = useContext(RootContext);
-	// const { notice, faq } = root;
+	const [faqTabList, setFaqTabList] = useState([]);
 
 	useEffect(() => {
 		var url =
@@ -43,45 +41,39 @@ const FAQContents = ({ searchText }) => {
 				setTotalNum(result.count);
 			})
 			.catch((error) => console.log("error", error));
+
+		url =
+			"https://quantec.zendesk.com/api/v2/help_center/ko/categories/900001257903/sections";
+		fetch(url, requestOptions)
+			.then((response) => response.json())
+			.then((result) => {
+				console.log(result);
+				const sections = result.sections.map((section) => {
+					return {
+						name: section.name,
+						id: section.id
+					};
+				});
+				console.log(sections);
+				setFaqTabList(sections);
+			})
+			.catch((error) => console.log("error", error));
 		//}
 	}, []);
 
 	useEffect(() => {
 		setSelNum(1);
 		if (selFaqList === "all") {
-			// setData();
 			setQuestionList(data);
 			setTotalNum(data.length);
-			// url =
-			// 	"https://quantec.zendesk.com/api/v2/help_center/ko/categories/900001257903/articles.json";
-		} else if (selFaqList === "investment") {
-			let list = data.filter((list) => list.section_id === 900000624966);
-			// setData(list);
-			setQuestionList(list);
-			setTotalNum(list.length);
-			// url =
-			// 	"https://quantec.zendesk.com/api/v2/help_center/ko/sections/900000624966/articles.json";
-		} else if (selFaqList === "account") {
-			let list = data.filter((list) => list.section_id === 900000624986);
-			// setData(list);
-			setQuestionList(list);
-			setTotalNum(list.length);
-			// url =
-			// 	"https://quantec.zendesk.com/api/v2/help_center/ko/sections/900000624986/articles.json";
-		} else if (selFaqList === "order") {
-			let list = data.filter((list) => list.section_id === 900001620223);
-			// setData(list);
-			setQuestionList(list);
-			setTotalNum(list.length);
-			// url =
-			// 	"https://quantec.zendesk.com/api/v2/help_center/ko/sections/900001620223/articles.json";
-		} else if (selFaqList === "moneypot") {
-			let list = data.filter((list) => list.section_id === 900000625006);
-			// setData(list);
-			setQuestionList(list);
-			setTotalNum(list.length);
-			// url =
-			// 	"https://quantec.zendesk.com/api/v2/help_center/ko/sections/900000625006/articles.json";
+		} else {
+			faqTabList.forEach((tab) => {
+				if (selFaqList === tab.name) {
+					let list = data.filter((list) => list.section_id === tab.id);
+					setQuestionList(list);
+					setTotalNum(list.length);
+				}
+			});
 		}
 	}, [selFaqList]);
 
@@ -103,12 +95,17 @@ const FAQContents = ({ searchText }) => {
 
 	return (
 		<div className="faq_cont">
-			<InvestmentTab selFaqList={selFaqList} setFaqList={setFaqList} />
+			<InvestmentTab
+				selFaqList={selFaqList}
+				setFaqList={setFaqList}
+				tabList={faqTabList}
+			/>
 			<div className="faq_box">
 				<QuestionList
 					questionList={questionList}
 					selNum={selNum}
 					DEFINE_LIST_NUM={DEFINE_LIST_NUM}
+					tabList={faqTabList}
 				/>
 			</div>
 			<PageNum

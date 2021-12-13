@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const QuestionItem = ({ question }) => {
+const QuestionItem = ({ question, tabList }) => {
 	const [isOpen, setOpen] = useState(false);
 
 	useEffect(() => {
@@ -13,20 +13,11 @@ const QuestionItem = ({ question }) => {
 			};
 		}
 	};
+	const list = tabList.filter((tab) => question.section_id === tab.id);
 	return (
 		<li className="faq_wrap">
 			<p className="question" onClick={() => setOpen(!isOpen)}>
-				<p className="question_section">
-					{question.section_id === 900000625006
-						? "머니포트 앱 사용"
-						: question.section_id === 900001620223
-						? "상품 주문"
-						: question.section_id === 900000624986
-						? "계좌 개설"
-						: question.section_id === 900000624966
-						? "투자 자문 상품"
-						: ""}
-				</p>
+				<p className="question_section">{list.length ? list[0].name : ""}</p>
 				<p className="question_tit active">
 					{question ? question.title : null}
 				</p>
